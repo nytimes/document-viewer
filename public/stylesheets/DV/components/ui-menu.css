@@ -1,0 +1,75 @@
+/* Tabs styling in the menu */
+#DV-Controls{
+  background-color:#f0f4f5;
+  height:37px;
+  border-bottom:1px solid #ABABAB;
+  border-top:1px solid #ABABAB; 
+  margin-top:10px;
+  position:relative;
+}
+
+
+.DV-views{
+  list-style-type:none;
+  float:left;
+  display:inline;
+  margin:0 0 0 10px; padding:0;
+}
+.DV-views div{
+  list-style-type:none;
+  float:left;
+  display:inline;
+  margin:8px 0 0; padding:0;
+}
+.DV-ie6 .DV-views{
+  position:absolute;
+}
+.DV-views div span{
+  display:block;
+  padding:8px 14px; 
+  background-color:#f4f4f4;
+  border:1px solid #ababab;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  text-decoration:none;
+  height:12px;
+  border-left:none;
+  border-bottom:1px solid #ababab;
+  text-transform:uppercase;
+  color:#666;  
+}
+.DV-ie6 .DV-views div span{
+  display:inline-block;
+  padding-bottom:7px;
+}
+.DV-views div.DV-first span{
+  border-left:1px solid #ababab;  
+}
+.DV-views div span:hover,
+.DV-viewDocument .DV-views #DV-documentView span,
+.DV-viewAnnotations .DV-views #DV-annotationView span,
+.DV-viewText .DV-views #DV-textView span,
+.DV-viewSearch .DV-views #DV-textView span{
+  text-decoration:none;
+  background-color:#fff;
+  color:#000;
+}
+.DV-views div a:focus{
+  outline:0;
+}
+
+.DV-viewDocument .DV-views #DV-documentView span,
+.DV-viewAnnotations .DV-views #DV-annotationView span,
+.DV-viewText .DV-views #DV-textView span,
+.DV-viewSearch .DV-views #DV-textView span{
+  border-bottom:1px solid #fff;  
+  font-weight:bold;
+}
+
+
+.DV-ie6.DV-viewDocument .DV-views #DV-documentView span,
+.DV-ie6.DV-viewAnnotations .DV-views #DV-annotationView span,
+.DV-ie6.DV-viewText .DV-views #DV-textView span,
+.DV-ie6.DV-viewSearch .DV-views #DV-textView span{
+  padding-bottom:8px;  
+}

@@ -1,0 +1,35 @@
+<div rel="aid-<%= id %>" id="DV-annotation-<%= id %>" class="DV-annotation DV-pageNote clearfix <%= orderClass %>" style="width:<%= width %>px;top:<%= top %>px">
+  <span class="DV-pageNoteAnnotationTab">
+    <span class="DV-pageNumber">p. <%= pageNumber %></span>
+  </span>
+  <div class="DV-annotationBG" style="width:<%= bgWidth %>px!important;">
+    <div class="DV-tl"></div>
+    <div class="DV-tr"></div>
+    <div class="DV-bl"></div>
+    <div class="DV-br"></div>
+    <div style="margin: 0 16px;">
+      <div class="DV-top"></div>
+      <div class="DV-bottom"></div>
+    </div>    
+    <div class="DV-annotationContent">
+      <div class="DV-annotationWrapper">
+        <div class="DV-hd">
+          <span class="DV-annotationLabel"><%= title %></span>
+          <span class="DV-pagination"><span class="DV-trigger DV-gotoPage">Go to Page <%= pageNumber %></span>
+            <span class="DV-trigger DV-annotationPrevious" title="Previous Annotation">Previous</span> 
+            <em>|</em> 
+            <span class="DV-trigger DV-annotationNext" title="Next Annotation">Next</span>
+          </span>
+        </div>
+      <div class="DV-bd">
+        <div class="DV-annotationText clearfix">
+          <%= text %>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="DV-b" style="width:<%= bWidth %>px;">
+  <span></span>
+</div>
+</div>
+</div>

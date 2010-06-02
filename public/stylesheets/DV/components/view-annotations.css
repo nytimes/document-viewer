@@ -1,0 +1,110 @@
+.DV-viewAnnotations .DV-set,
+.DV-viewAnnotations #DV-text,
+.DV-viewAnnotations #DV-search,
+.DV-viewAnnotations #DV-bar{
+  display:none;
+}
+.DV-viewAnnotations #DV-annotations{
+  display:block;
+}
+
+.DV-viewAnnotations .DV-annotationRegion{
+  display:none;
+  filter:none;
+}
+.DV-viewAnnotations .DV-annotationTab{
+  background:none;
+  filter:none;
+}
+.DV-viewAnnotations .DV-pageNoteAnnotationTab{
+  background:none;
+  margin-top:7px !important;
+}
+
+.DV-viewAnnotations .DV-pageNote .DV-tl{
+  background-image:url(../../../images/embed/box-tl.png);
+}
+.DV-ie .DV-viewAnnotations .DV-pageNote .DV-tl{
+  background-image:url(../../../images/box-tl.gif);
+}
+
+.DV-ie .DV-viewAnnotations .DV-annotationTab,
+.DV-ie .DV-viewAnnotations .DV-pageNoteAnnotationTab{
+  background:none;
+  filter:none;
+}
+.DV-viewAnnotations .DV-annotationNext,
+.DV-viewAnnotations .DV-annotationPrevious,
+.DV-viewAnnotations em{
+  display:none !important;
+}
+
+.DV-viewAnnotations .DV-annotationBG{
+  margin-top:0;
+  position:relative;
+  clear:left;
+}
+.DV-viewAnnotations .DV-annotation{
+  position:relative;
+  top:0 !important;
+  display: inline-block;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*hack to control scrollbar width in webkit*/
+.DV-viewAnnotations .DV-annotation:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .DV-viewAnnotations .DV-annotation {height: 1%;}
+.DV-viewAnnotations .DV-annotation {display: block;}
+/* End hide from IE-mac */
+
+.DV-viewAnnotations #DV-currentPagePrefix,
+.DV-viewAnnotations #DV-totalPages{
+  display:none;
+}
+.DV-viewAnnotations #DV-currentAnnotationPrefix,
+.DV-viewAnnotations #DV-totalAnnotations{
+  display:inline;
+}
+.DV-viewAnnotations .DV-pageNote {
+  padding-top:0;
+}
+/*.DV-ie .DV-ds-insetTop,
+.DV-ie .DV-ds-insetBottom,
+.DV-ie .DV-ds-insetLeft,
+.DV-ie .DV-ds-insetRight{
+  display:none !important;
+}
+*/
+.DV-ie .DV-viewAnnotations .DV-annotationLabel {
+  float:none;
+  left:0;
+  position:absolute;
+  top:7px;
+}
+
+.DV-viewAnnotations .DV-noChildren{
+  display:none !important;
+}
+.DV-viewAnnotations .DV-hasChildren{
+  display:block !important;
+}
+.DV-viewAnnotations #DV-sidebar #DV-well .DV-chaptersContainer div span.DV-trigger{
+  font-weight:normal !important;
+  color:#004276 !important;
+}
+.DV-viewAnnotations #DV-sidebar #DV-well .DV-chaptersContainer div.DV-first span.DV-trigger{
+  font-weight:bold !important;
+}
+
+
+/* ---------------------------------------------------- connector */
+.DV-viewAnnotations .DV-annotationRegionBorder{
+  display:none;
+}

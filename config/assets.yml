@@ -1,0 +1,42 @@
+# package_assets: always
+embed_images: datauri
+template_function: _.template
+
+javascripts:
+  viewer:
+    - public/javascripts/DV/vendor/jquery-1.4.2.js
+    - public/javascripts/DV/vendor/jquery-ui-1.8.1.custom.min.js
+    - public/javascripts/DV/vendor/jquery.scrollTo-min.js
+    - public/javascripts/DV/vendor/underscore.js
+    - public/javascripts/DV/vendor/jquery.easing.compatibility.js
+    - public/javascripts/DV/vendor/jquery.acceptInput.js
+    - public/javascripts/DV/lib/initializer.js
+    - public/javascripts/DV/lib/class.js
+    - public/javascripts/DV/lib/history.js
+    - public/javascripts/DV/lib/*.js
+    - public/javascripts/DV/schema/*.js
+    - public/javascripts/DV/elements/*.js
+    - public/javascripts/DV/models/*.js
+    - public/javascripts/DV/events/events.js
+    - public/javascripts/DV/events/View*.js
+    - public/javascripts/DV/events/*.js    
+    - public/javascripts/DV/helpers/helpers.js
+    - public/javascripts/DV/helpers/*.js    
+    - public/javascripts/DV/states/states.js
+    - public/javascripts/DV/states/*.js    
+    - public/javascripts/DV/controllers/documentViewer.js
+    - public/javascripts/DV/controllers/*.js
+
+stylesheets:
+  viewer:
+    - public/stylesheets/DV/components/reset.css
+    - public/stylesheets/DV/components/structure.css
+    - public/stylesheets/DV/components/ui.css
+    - public/stylesheets/DV/components/*.css
+
+  plain:
+    - public/stylesheets/DV/plain.css
+
+templates:
+  viewer:
+    - public/javascripts/DV/views/*.jst

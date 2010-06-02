@@ -1,0 +1,142 @@
+/* inset shadows */
+.DV-ds-insetTop{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;  
+  height:5px;
+  z-index:3010;
+}
+.DV-ds-insetBottom{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:5px;  
+  z-index:3010;
+}
+.DV-ds-insetLeft{
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  width:5px;
+  z-index:3010;
+}
+.DV-ds-insetRight{
+  position:absolute;
+  top:0;
+  right:0;
+  width:5px;  
+  z-index:3010;
+}
+
+.DV-ie6 .DV-ds-insetRight{
+  right:-1px;  
+}
+
+/* base shadow fade rules*/
+.DV-ds{
+  position:absolute;
+  background-color:#000;  
+}
+.DV-ds-1{
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";  
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=5);
+  opacity:.05;    
+}
+.DV-ds-2{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=4)";    
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=4);      
+  opacity:.04;   
+
+}
+.DV-ds-3{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=3)";      
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=3);    
+  opacity:.03;  
+}
+.DV-ds-4{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=2)";
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=2);    
+  opacity:.02;     
+}
+.DV-ds-5{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=2)";  
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=1);    
+  opacity:.01;     
+}
+
+/* inset shadows - top */
+.DV-ds-insetTop .DV-ds{
+  top:0;
+  left:0;
+  right:0;
+}
+
+/* inset shadows - bottom */
+.DV-ds-insetBottom .DV-ds{
+  bottom:0;
+  left:0;
+  right:0;  
+}
+
+/* top|bottom rules */
+.DV-ds-insetBottom .DV-ds-1,
+.DV-ds-insetTop .DV-ds-1{
+  height: 1px;
+}
+.DV-ds-insetBottom .DV-ds-2,
+.DV-ds-insetTop .DV-ds-2{
+  height: 2px;
+}
+.DV-ds-insetBottom .DV-ds-3,
+.DV-ds-insetTop .DV-ds-3{
+  height: 3px;
+}
+.DV-ds-insetBottom .DV-ds-4,
+.DV-ds-insetTop .DV-ds-4{
+  height: 4px;
+}
+.DV-ds-insetBottom .DV-ds-5,
+.DV-ds-insetTop .DV-ds-5{
+  height: 5px;
+}
+
+/* inset shadows - left */
+.DV-ds-insetLeft .DV-ds{
+  top:0;
+  left:0;
+  bottom:0;
+}
+
+/* inset shadows - bottom */
+.DV-ds-insetRight .DV-ds{
+  top:0;
+  right:0;
+  bottom:0;  
+}
+
+/* left|right rules */
+.DV-ds-insetLeft .DV-ds-1,
+.DV-ds-insetRight .DV-ds-1{
+  width: 1px;
+}
+.DV-ds-insetLeft .DV-ds-2,
+.DV-ds-insetRight .DV-ds-2{
+  width: 2px;
+}
+.DV-ds-insetLeft .DV-ds-3,
+.DV-ds-insetRight .DV-ds-3{
+  width: 3px;
+}
+.DV-ds-insetLeft .DV-ds-4,
+.DV-ds-insetRight .DV-ds-4{
+  width: 4px;
+}
+.DV-ds-insetLeft .DV-ds-5,
+.DV-ds-insetRight .DV-ds-5{
+  width: 5px;
+}
+
