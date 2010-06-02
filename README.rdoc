@@ -5,6 +5,10 @@
   /_____/\____/\___/ |___/_/\___/|__/|__/\___/_/
 
 
+== Source
+ * The <tt>frontend</tt> branch is home to all of the HTML, CSS, and Javascript you'll need to get a static viewer up and running.
+ * The <tt>rails</tt> branch (TK) contains a Rails-based admin you can use to create, manage, and serve viewers.
+
 == Browser Support
 All core functionality is supported as far back as IE6. However, users with modern browsers(Firefox 3.5, Safari 4, Chrome) will notice a much improved view. The markup and css used to support IE6 is pretty atrocious. New templates to take more aggressive use of CSS3 treats like rounded corners and gradients are on the roadmap. 
 
