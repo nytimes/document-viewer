@@ -6,10 +6,10 @@
   position: absolute;
   right:-10px;
 }
-  #DV-docViewer.DV-searchable .DV-zoomControls {
-    right:235px;
-  }
 
+#DV-docViewer.DV-searchable .DV-zoomControls {
+  right:235px;
+}
 
 .DV-zoomLabel{
   color:#333333;
@@ -20,7 +20,6 @@
   padding:3px 16px 0 0;
   margin: 3px 0 0 -74px;
   position:relative;
-
 }
 
 #DV-zoomBox{
@@ -43,12 +42,14 @@
   background: transparent url(../../../images/DV/embed/slider.gif) no-repeat 0 0;
   outline: none;
 }
+
 .DV-zoomControls .DV-trigger{
   font-size:11px;
   text-decoration:none;
   font-family:Arial,Helvetica,sans-serif;
   color:#004276;
 }
+
 .DV-triggers .DV-selected{
   font-weight:bold;
   color:#000;
