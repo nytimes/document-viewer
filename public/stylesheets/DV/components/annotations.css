@@ -15,6 +15,7 @@
   cursor: default !important;
   padding-top:20px;
 }
+
 .DV-activeAnnotation{
   z-index:15100;
   margin-top:1px;
@@ -60,38 +61,46 @@
   padding-top:0;
   cursor:default;
 }
+
 .DV-annotationWrapper{
   position:static;
   margin-left:0;
   background:transparent url(../../../images/DV/embed/box-right.png) repeat-y right top;
   margin-top:5px;
 }
-  .DV-private .DV-annotationWrapper {
-    background:transparent url(../../../images/DV/embed/box-right-private.png) repeat-y right top;
-  }
+
+.DV-private .DV-annotationWrapper {
+  background:transparent url(../../../images/DV/embed/box-right-private.png) repeat-y right top;
+}
+
 .DV-ie .DV-annotationWrapper{
   background-image:url(../../../images/DV/embed/box-right.gif);
 }
-  .DV-ie .DV-private .DV-annotationWrapper {
-    background-image:url(../../../images/DV/embed/box-right-private.gif);
-  }
+  
+.DV-ie .DV-private .DV-annotationWrapper {
+  background-image:url(../../../images/DV/embed/box-right-private.gif);
+}
 
-
-.DV-hd,.DV-bd,.DV-ft{
+.DV-hd,
+.DV-bd,
+.DV-ft{
   padding: 6px 0 7px;
   margin: 0 12px 5px;
   width:auto;
   position:relative;
 }
+
 .DV-bd{
   margin-bottom:0;
   background-color:#fff;
   padding: 6px 10px 0;
   margin: 0 16px;
 }
-  .DV-annotation.DV-editing .DV-bd {
-    padding-bottom: 10px;
-  }
+
+.DV-annotation.DV-editing .DV-bd {
+  padding-bottom: 10px;
+}
+
 .DV-hd{
   font-family:Arial,Helvetica,sans-serif;
   font-size:11px;
@@ -100,9 +109,11 @@
   background-color:#fff;
   margin: 0 16px;
 }
+
 .DV-pageNote .DV-hd{
   padding-bottom:0;
 }
+
 .DV-hd span.DV-close{
   float:right;
   display:inline;
@@ -110,9 +121,11 @@
   text-decoration:none;
   font-size:10px;
 }
+
 .DV-hd span.DV-close:hover{
   text-decoration:underline;
 }
+
 .DV-pageNote .DV-hd span.DV-close,
 .DV-viewAnnotations .DV-hd span.DV-close{
   display:none;
@@ -125,13 +138,15 @@
   color: #004276;
   cursor: pointer;
 }
-  .DV-showEdit:hover {
-    text-decoration: underline;
-  }
-  .DV-isContributor .DV-showEdit,
-  .DV-isOwner .DV-showEdit {
-    display: inline;
-  }
+
+.DV-showEdit:hover {
+  text-decoration: underline;
+}
+
+.DV-isContributor .DV-showEdit,
+.DV-isOwner .DV-showEdit {
+  display: inline;
+}
 
 .DV-hd .DV-pagination{
   margin: 0;
@@ -143,14 +158,15 @@
   background-color:#fff;
 }
 
-
 .DV-pagination .DV-gotoPage{
   display:none;
 }
+
 .DV-viewAnnotations .DV-hd .DV-pagination{
   padding-right:0;
   display:block;
 }
+
 .DV-viewAnnotations .DV-hd .DV-pagination .DV-gotoPage{
   display:inline;
   font-weight:normal;
@@ -158,8 +174,6 @@
   float:right;
 }
 
-
-.DV-hd a,
 .DV-hd .DV-trigger
 {
   color:#004276;
@@ -177,26 +191,29 @@
 .DV-resultPrevious, .DV-hd span.DV-annotationPrevious {
   background: url(../../../images/DV/embed/leftArrow.gif) no-repeat left 1px;
 }
-  .DV-hd span.DV-annotationPrevious{
-    padding-left:19px;
-    padding-right:8px;
-  }
-  .DV-lastAnnotation .DV-hd span.DV-annotationPrevious{
-    padding-right:0;
-  }
-    .DV-hd span.DV-annotationPrevious:hover{
-      text-decoration:underline;
-    }
 
+.DV-hd span.DV-annotationPrevious{
+  padding-left:19px;
+  padding-right:8px;
+}
 
+.DV-lastAnnotation .DV-hd span.DV-annotationPrevious{
+  padding-right:0;
+}
+
+.DV-hd span.DV-annotationPrevious:hover{
+  text-decoration:underline;
+}
 
 .DV-resultNext, .DV-hd span.DV-annotationNext {
   background:transparent url(../../../images/DV/embed/rightArrow.gif) no-repeat right 1px;
 }
+
 .DV-hd span.DV-annotationNext{
   padding-right:19px;
   padding-left:8px;
 }
+
 .DV-hd em{
   font-style:normal;
 }
@@ -218,10 +235,12 @@
   font-weight:bold;
   color:#333;
 }
-  .DV-annotationTitleInput {
-    position: relative; top: -4px;
-    width: 300px;
-  }
+
+.DV-annotationTitleInput {
+  position: relative; top: -4px;
+  width: 300px;
+}
+
 .DV-b{
   width:100%;
   position:relative;
@@ -232,6 +251,7 @@
   margin-right:0;
   zoom:1;
 }
+
 .DV-b span{
   height:26px;
   width:65px;
@@ -241,6 +261,7 @@
   position:relative;
 
 }
+
 .DV-annotationContent{
   left:0;
   background:transparent url(../../../images/DV/embed/box-left.png) repeat-y left top;
@@ -250,15 +271,18 @@
   position:relative;
   width:auto;
 }
-  .DV-private .DV-annotationContent {
-    background:transparent url(../../../images/DV/embed/box-left-private.png) repeat-y left top;
-  }
+
+.DV-private .DV-annotationContent {
+  background:transparent url(../../../images/DV/embed/box-left-private.png) repeat-y left top;
+}
+
 .DV-ie .DV-annotationContent{
   background-image:url(../../../images/DV/embed/box-left.gif);
 }
-  .DV-ie .DV-private .DV-annotationContent {
-    background-image:url(../../../images/DV/embed/box-left-private.gif);
-  }
+
+.DV-ie .DV-private .DV-annotationContent {
+  background-image:url(../../../images/DV/embed/box-left-private.gif);
+}
 
 .DV-annotationExcerpt{
   border:1px solid #ccc;
@@ -272,6 +296,7 @@
   z-index:1020;
   zoom:1;
 }
+
 .DV-annotationExcerptImageOverlay {
   background: transparent url(../../../images/DV/white.png);
   z-index: 2002;
@@ -280,7 +305,8 @@
   top:0;
 }
 
-.DV-annotationText, .DV-annotationTextArea{
+.DV-annotationText, 
+.DV-annotationTextArea{
   color:#333;
   font-size:14px;
   font-family:Georgia,Times,serif;
@@ -289,17 +315,20 @@
   padding:0 0 5px;
   cursor:default;
 }
-  .DV-annotationTextArea {
-    padding: 5px 5px;
-    height: 75px;
-    display: block;
-    width: auto;
-    resize: none;
-  }
+
+.DV-annotationTextArea {
+  padding: 5px 5px;
+  height: 75px;
+  display: block;
+  width: auto;
+  resize: none;
+}
+
 .DV-pageNote .DV-annotationText, .DV-pageNote .DV-annotationTextArea {
   padding-top:10px;
   border-top:1px solid #ccc;
 }
+
 .DV-annotationTab{
   position:absolute;
   left:-31px;
@@ -309,11 +338,11 @@
   background: url('../../../images/DV/tab.png') no-repeat 0 0;
   z-index:15101 !important;
   cursor:pointer;
-/*  display:none;*/
 }
-  .DV-private .DV-annotationTab {
-    background:url('../../../images/DV/tab-private.png') no-repeat 0 0;
-  }
+
+.DV-private .DV-annotationTab {
+  background:url('../../../images/DV/tab-private.png') no-repeat 0 0;
+}
 
 .DV-pageNoteAnnotationTab,
 .DV-viewAnnotations .DV-annotationTab{
@@ -326,27 +355,32 @@
   z-index:1022;
   cursor:default !important;
 }
-  .DV-private .DV-pageNoteAnnotationTab,
-  .DV-viewAnnotations .DV-private .DV-annotationTab {
-    background:url('../../../images/DV/tab-note-private.png') no-repeat 0 0;
-  }
+
+.DV-private .DV-pageNoteAnnotationTab,
+.DV-viewAnnotations .DV-private .DV-annotationTab {
+  background:url('../../../images/DV/tab-note-private.png') no-repeat 0 0;
+}
+
 .DV-viewAnnotations .DV-annotationTab{
   margin-top:6px !important;
 }
+
 .DV-ie6 .DV-annotationTab{
   background:none;
   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png');
 }
-  .DV-ie6 .DV-private .DV-annotationTab {
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab-private.png');
-  }
-.DV-ie6 .DV-pageNoteAnnotationTab{
-  background:none;
-  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab-note-ie.png');
+.DV-ie6 .DV-private .DV-annotationTab {
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab-private.png');
 }
-  .DV-ie6 .DV-private .DV-pageNoteAnnotationTab {
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab-note-ie-private.png');
-  }
+
+.DV-ie6 .DV-pageNoteAnnotationTab{
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab-note-ie.png');
+}
+
+.DV-ie6 .DV-private .DV-pageNoteAnnotationTab {
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab-note-ie-private.png');
+}
 
 .DV-activeAnnotation .DV-annotationTab{
   position:absolute;
@@ -357,6 +391,7 @@
   background:url('../../../images/DV/tabActive.png') no-repeat 0 0;
   z-index:1012;
 }
+
 .DV-coverVisible .DV-annotationTab,
 .DV-annotationActivated .DV-annotationTab{
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -371,27 +406,27 @@
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png')
 }
 
-
 .DV-coverVisible .DV-activeAnnotation .DV-annotationTab,
 .DV-annotationHover .DV-annotationTab{
-
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter:
   progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png')
   progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   opacity:1 !important;
 }
-  .DV-activeAnnotation.DV-private .DV-annotationTab {
-    background:url('../../../images/DV/tabActive-private.png') no-repeat 0 0;
-  }
+
+.DV-activeAnnotation.DV-private .DV-annotationTab {
+  background:url('../../../images/DV/tabActive-private.png') no-repeat 0 0;
+}
+
 .DV-ie .DV-activeAnnotation .DV-annotationTab {
   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image, src='../../../images/DV/tabActive-ie.png');
   background-image:none;
 }
-  .DV-ie .DV-activeAnnotation.DV-private .DV-annotationTab {
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image, src='../../../images/DV/tabActive-ie-private.png');
-  }
 
+.DV-ie .DV-activeAnnotation.DV-private .DV-annotationTab {
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image, src='../../../images/DV/tabActive-ie-private.png');
+}
 
 .DV-annotationRegion{
   position:absolute;
@@ -403,14 +438,17 @@
   z-index:1000;
   cursor:pointer;
 }
-  .DV-annotationRegion.DV-private, .DV-annotation.DV-private .DV-annotationRegion {
-    background: #5aa8ff;
-  }
-  .DV-annotationHover .DV-private, .DV-annotationRegion.DV-private.active,
-  .DV-annotationHover .DV-private .DV-annotationRegion, .DV-annotation.DV-private .DV-annotationRegion.active {
-    -moz-box-shadow:0 0 10px #666; -webkit-box-shadow:0 0 10px #666;
-  }
+.DV-annotationRegion.DV-private, .DV-annotation.DV-private .DV-annotationRegion {
+  background: #5aa8ff;
+}
 
+.DV-annotationHover .DV-private, 
+.DV-annotationRegion.DV-private.active,
+.DV-annotationHover .DV-private .DV-annotationRegion, 
+.DV-annotation.DV-private .DV-annotationRegion.active {
+  -moz-box-shadow:0 0 10px #666; 
+  -webkit-box-shadow:0 0 10px #666;
+}
 
 .DV-getHeights{
   position:absolute !important;
@@ -418,15 +456,16 @@
   top:-1000em !important;
   display:block !important;
 }
+
 .DV-getHeights .DV-annotation{
   height:0 !important;
 }
+
 .DV-getHeights .DV-pageNote{
   height:auto !important;
 }
 
 .DV-excerptLowLevel{
-
   zooom:1;
   position:absolute;
   z-index:2999;
@@ -435,24 +474,23 @@
 }
 
 .DV-excerptLowLevel img{
-
   z-index:2001;
   position:absolute;
   zoom:1;
   left:0;
   top:0;
 }
+
 .DV-ie6 .DV-excerptLowLevel img{
   display:none!important;
 }
-.DV-ie6 .DV-excerptLowLevel{
-/*  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../../images/DV/white.png", sizing="100%");*/
-}
+
 .DV-excerptHighLevel{
   position:absolute;
   overflow:hidden;
   z-index:3000;
 }
+
 .DV-excerptHighLevel img{
   position:absolute;
 }
@@ -460,32 +498,34 @@
 .DV-annotationEditControls {
   margin-top: 15px;
 }
-  .DV-cancelEdit {
-    margin-right: 10px;
-  }
+
+.DV-cancelEdit {
+  margin-right: 10px;
+}
 
 /*------------------------ SHOW/HIDE EDIT UI ---------------------------------*/
 .DV-annotation .DV-editVisible {
   display: none;
 }
-  .DV-editing .DV-editVisible {
-    display: block;
-  }
-  .DV-editing .DV-editHidden {
-    display: none;
-  }
+
+.DV-editing .DV-editVisible {
+  display: block;
+}
+
+.DV-editing .DV-editHidden {
+  display: none;
+}
 
 .DV-annotation .DV-contributorVisible,
 .DV-annotation .DV-ownerVisible {
   display: none;
 }
-  .DV-isContributor .DV-annotation .DV-contributorVisible,
-  .DV-isOwner .DV-annotation .DV-contributorVisible,
-  .DV-isOwner .DV-annotation .DV-ownerVisible {
-    display: block;
-  }
 
-
+.DV-isContributor .DV-annotation .DV-contributorVisible,
+.DV-isOwner .DV-annotation .DV-contributorVisible,
+.DV-isOwner .DV-annotation .DV-ownerVisible {
+  display: block;
+}
 
 /* ---------------------------------------------------- block */
 .DV-tl,
@@ -499,78 +539,99 @@
   background-position: 0 0;
   font-size:0;
 }
+
 .DV-tl{
   background-image:url(../../../images/DV/embed/box-tl.png);
   left:0;
   top:5px;
 }
-  .DV-private .DV-tl {
-    background-image:url(../../../images/DV/embed/box-tl-private.png);
-  }
+
+.DV-private .DV-tl {
+  background-image:url(../../../images/DV/embed/box-tl-private.png);
+}
+
 .DV-ie .DV-tl{
   background-image:url(../../../images/DV/embed/box-tl.gif);
 }
-  .DV-ie .DV-private .DV-tl {
-    background-image:url(../../../images/DV/embed/box-tl-private.gif);
-  }
+.DV-ie .DV-private .DV-tl {
+  background-image:url(../../../images/DV/embed/box-tl-private.gif);
+}
+
 .DV-ie .DV-tl{
   top:5px;
 }
+
 .DV-pageNote .DV-tl{
   background-image:url(../../../images/DV/embed/box-tla.png);
 }
-  .DV-pageNote.DV-private .DV-tl {
-    background-image:url(../../../images/DV/embed/box-tla-private.png);
-  }
+
+.DV-pageNote.DV-private .DV-tl {
+  background-image:url(../../../images/DV/embed/box-tla-private.png);
+}
+
 .DV-ie .DV-pageNote .DV-tl{
   background-image:url(../../../images/DV/embed/box-tla.gif);
 }
-  .DV-ie .DV-pageNote.DV-private .DV-tl{
-    background-image:url(../../../images/DV/embed/box-tla-private.gif);
-  }
+
+.DV-ie .DV-pageNote.DV-private .DV-tl{
+  background-image:url(../../../images/DV/embed/box-tla-private.gif);
+}
+
 .DV-tr{
   background-image:url(../../../images/DV/embed/box-tr.png);
   right:2px;
   top:5px;
 }
-  .DV-private .DV-tr {
-    background-image:url(../../../images/DV/embed/box-tr-private.png);
-  }
+
+.DV-private .DV-tr {
+  background-image:url(../../../images/DV/embed/box-tr-private.png);
+}
+
 .DV-ie .DV-tr{
   background-image:url(../../../images/DV/embed/box-tr.gif);
   top:5px;
 }
-  .DV-ie .DV-private .DV-tr{
-    background-image:url(../../../images/DV/embed/box-tr-private.gif);
-  }
+
+.DV-ie .DV-private .DV-tr{
+  background-image:url(../../../images/DV/embed/box-tr-private.gif);
+}
+
 .DV-bl{
   background-image:url(../../../images/DV/embed/box-bl.png);
   left:0;
   bottom:10px;
 }
-  .DV-private .DV-bl {
-    background-image:url(../../../images/DV/embed/box-bl-private.png);
-  }
+
+.DV-private .DV-bl {
+  background-image:url(../../../images/DV/embed/box-bl-private.png);
+}
+
 .DV-ie .DV-bl{
   background-image:url(../../../images/DV/embed/box-bl.gif);
 }
-  .DV-ie .DV-private .DV-bl{
-    background-image:url(../../../images/DV/embed/box-bl-private.gif);
-  }
+
+.DV-ie .DV-private .DV-bl{
+  background-image:url(../../../images/DV/embed/box-bl-private.gif);
+}
+
 .DV-br{
   background-image:url(../../../images/DV/embed/box-br.png);
   right:2px;
   bottom:10px;
 }
-  .DV-private .DV-br {
-    background-image:url(../../../images/DV/embed/box-br-private.png);
-  }
+
+.DV-private .DV-br {
+  background-image:url(../../../images/DV/embed/box-br-private.png);
+}
+
 .DV-ie .DV-br{
   background-image:url(../../../images/DV/embed/box-br.gif);
 }
-  .DV-ie .DV-private .DV-br{
-    background-image:url(../../../images/DV/embed/box-br-private.gif);
-  }
+
+.DV-ie .DV-private .DV-br{
+  background-image:url(../../../images/DV/embed/box-br-private.gif);
+}
+
 .DV-top{
   height: 16px;
   left: 16px;
@@ -580,15 +641,19 @@
   background:url(../../../images/DV/embed/box-top.png) repeat-x 0 0;
   font-size:0;
 }
-  .DV-private .DV-top{
-    background:url(../../../images/DV/embed/box-top-private.png) repeat-x 0 0;
-  }
+
+.DV-private .DV-top{
+  background:url(../../../images/DV/embed/box-top-private.png) repeat-x 0 0;
+}
+
 .DV-ie .DV-top{
   background-image:url(../../../images/DV/embed/box-top.gif);
 }
-  .DV-ie .DV-private .DV-top {
-    background-image:url(../../../images/DV/embed/box-top-private.gif);
-  }
+
+.DV-ie .DV-private .DV-top {
+  background-image:url(../../../images/DV/embed/box-top-private.gif);
+}
+
 .DV-bottom{
   bottom: 10px;
   height: 16px;
@@ -598,15 +663,19 @@
   background:url(../../../images/DV/embed/box-bottom.png) repeat-x 0 0;
   font-size:0;
 }
-  .DV-private .DV-bottom {
-    background:url(../../../images/DV/embed/box-bottom-private.png) repeat-x 0 0;
-  }
+
+.DV-private .DV-bottom {
+  background:url(../../../images/DV/embed/box-bottom-private.png) repeat-x 0 0;
+}
+
 .DV-ie .DV-bottom{
   background-image:url(../../../images/DV/embed/box-bottom.gif);
 }
-  .DV-ie .DV-private .DV-bottom {
-    background-image:url(../../../images/DV/embed/box-bottom-private.gif);
-  }
+
+.DV-ie .DV-private .DV-bottom {
+  background-image:url(../../../images/DV/embed/box-bottom-private.gif);
+}
+
 .DV-ie6 .DV-bottom,
 .DV-ie6 .DV-top{
   width:100%;
@@ -614,7 +683,6 @@
 
 .DV-annotationRegionBorder{
   border:3px solid #F8DF42;
-/*  display:none;*/
   margin-left:-3px;
   position:absolute;
   top:-3px;
@@ -627,16 +695,17 @@
   filter: alpha(opacity=90);
   opacity:.9;
 }
-  .DV-private .DV-annotationRegionBorder {
-    border-color: #42dff8;
-  }
 
+.DV-private .DV-annotationRegionBorder {
+  border-color: #42dff8;
+}
 
 .DV-annotationHover .DV-annotationRegionBorder{
   display:block;
   -moz-box-shadow:0 0 10px #666;
   -webkit-box-shadow:0 0 10px #666;
 }
+
 .DV-coverVisible .DV-annotationRegionBorder{
   -moz-box-shadow:0 0 10px #333;
   -webkit-box-shadow:0 0 10px #333;
@@ -644,6 +713,7 @@
   filter: alpha(opacity=60);
   opacity:.6;
 }
+
 .DV-activeAnnotation .DV-annotationRegion,
 .DV-activeAnnotation .DV-annotationRegionBorder{
   display:none;
@@ -659,13 +729,16 @@
   padding-top:4px;
   display:none;
 }
+
 .DV-closeAnnotation:hover{
   text-decoration:underline;
   color:#333;
 }
+
 .DV-activeAnnotation .DV-closeAnnotation{
   display:inline;
 }
+
 .DV-activeAnnotation .DV-annotationTab{
  display:inline;
 }
