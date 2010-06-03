@@ -12,10 +12,6 @@
   margin-top:15px;
   border-top:1px solid #ccc;
 }
-  #DV-docViewer.DV-emptySidebar #DV-supplemental {
-    margin-top: 0;
-    border-top: 0;
-  }
 
 #DV-storyLink,
 #DV-pdfLink {
@@ -70,10 +66,6 @@
 }
 #DV-next:focus {
   outline: 0;
-}
-.DV-emptySidebar #DV-previous,
-.DV-emptySidebar #DV-next {
- top:0;
 }
 .DV-pageNumberContainer{
   width:154px;

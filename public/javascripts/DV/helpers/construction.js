@@ -137,13 +137,8 @@ _.extend(DV.Schema.helpers, {
       totalAnnotations: DV.Schema.data.totalAnnotations
     });
 
-    if (!showAnnotations && !showChapters && !DV.Schema.document.description) {
-      this.elements.viewer.addClass('DV-emptySidebar');
-      $j('#DV-Controls .DV-navControlsContainer').html(navControls);
-    }else{
-      $j('#DV-well .DV-navControlsContainer').html(navControls);
-      $j('#DV-sidebar').show();
-    }
+    $j('#DV-well .DV-navControlsContainer').html(navControls);
+    $j('#DV-sidebar').show();
 
     // Set the currentPage element reference.
     this.elements.currentPage = $j('span#DV-currentPage');
