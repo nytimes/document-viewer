@@ -25,10 +25,6 @@ _.extend(DV.Schema.helpers, {
         descriptionContainer: JST.descriptionContainer({ description: description})
       }
     ));
-
-    if (DV.options.embedded) {
-      this.elements.viewer.addClass('DV-embedded');
-    }
   },
    renderNavigation : function() {
      var chapterViews = [], bolds = [], expandIcons = [], expanded = [], navigationExpander = JST.navigationExpander({}),nav=[],notes = [],chapters = [];

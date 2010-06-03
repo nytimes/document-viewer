@@ -16,15 +16,7 @@ DV.load = function(documentRep, options) {
   // Once we have the JSON representation in-hand, finish loading the viewer.
   var continueLoad = DV.loadJSON = function(json) {
     DV.Schema.importCanonicalDocument(json);
-    if (DV.container == document.body || options.hidePageOverflow == true || options.embedded == true) {
-      DV.controller.helpers.hidePageOverflow();
-    }
     DV.controller.states.InitialLoad();
-    // hide body overflow if the embedded or hidePageOverflow == true
-
-
-
-    // call post load methods in the window scope
     if (options.afterLoad) options.afterLoad();
     if (DV.afterLoad) DV.afterLoad();
   };

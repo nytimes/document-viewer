@@ -155,11 +155,8 @@ DV.Schema.helpers = {
       this.elements.bar.css('height', height);
     },
     getWindowDimensions: function(){
-
-      var offset = (DV.options.embedded == true) ? 0 : parseInt($j(document.body).css('padding-top'), 10);
-
       var d = {
-        height: (window.innerHeight ? window.innerHeight : this.elements.browserWindow.height()) - offset,
+        height: window.innerHeight ? window.innerHeight : this.elements.browserWindow.height(),
         width: this.elements.browserWindow.width()
       };
       return d;
@@ -211,10 +208,6 @@ DV.Schema.helpers = {
           observers.splice(i,1);
         }
       }
-    },
-    hidePageOverflow: function(){
-      var overflowRules = JST.hidePageOverflow({});
-      $j('head').append(overflowRules);
     },
     setWindowSize: function(windowDimensions){
 
