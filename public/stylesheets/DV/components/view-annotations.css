@@ -22,10 +22,10 @@
 }
 
 .DV-viewAnnotations .DV-pageNote .DV-tl{
-  background-image:url(../../../images/embed/box-tl.png);
+  background-image:url(../../../images/DV/embed/box-tl.png);
 }
 .DV-ie .DV-viewAnnotations .DV-pageNote .DV-tl{
-  background-image:url(../../../images/box-tl.gif);
+  background-image:url(../../../images/DV/embed/box-tl.gif);
 }
 
 .DV-ie .DV-viewAnnotations .DV-annotationTab,
