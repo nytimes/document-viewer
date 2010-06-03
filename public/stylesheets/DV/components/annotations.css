@@ -722,7 +722,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 .DV-closeAnnotation{
   color:#000;
   float:left;
-  font-family:arial;
+  font-family:Arial,Helvetica,sans-serif;
   font-size:10px;
   font-weight:normal;
   margin-left:10px;
