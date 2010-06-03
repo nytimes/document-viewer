@@ -173,8 +173,8 @@ _.extend(DV.Schema.helpers, {
   showEntity: function(name, offset, length) {
     $j('span#DV-totalSearchResult').text('');
     $j('span#DV-searchQuery').text(name);
-    $j('span#DV-currentSearchResult').text("Searching...");
-    this.events.loadText(this.models.document.currentIndex(), _.bind(this.helpers.highlightEntity, this.helpers, offset, length));
+    $j('span#DV-currentSearchResult').text("Searching");
+    this.events.loadText(this.models.document.currentIndex(), _.bind(DV.controller.helpers.highlightEntity, DV.controller.helpers, offset, length));
   },
   cleanUpSearch: function(){
     var application = this.application;
