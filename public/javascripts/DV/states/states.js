@@ -49,7 +49,7 @@ DV.Schema.states = {
       this.helpers.handleInitialState();
     },
     exit: function(destinationState){
-      this.dragReporter = new DV.dragReporter('#DV-pageCollection',$j.proxy(this.helpers.shift, this));
+      this.dragReporter = new DV.dragReporter('#DV-pageCollection',$j.proxy(this.helpers.shift, this), { ignoreSelector: '.DV-annotation' });
       // Start polling every 100ms
       this.helpers.startCheckTimer();
     }
