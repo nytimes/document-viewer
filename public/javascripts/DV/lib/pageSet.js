@@ -119,7 +119,7 @@ DV.pageSet = DV.Class.extend({
   draw: function(pageCollection){
     for(var i = 0, pageCollectionLength = pageCollection.length; i < pageCollectionLength;i++){
       var page = this.pages[pageCollection[i].label];
-      page.draw({ index: pageCollection[i].index, pageNumber: pageCollection[i].index+1});
+      if (page) page.draw({ index: pageCollection[i].index, pageNumber: pageCollection[i].index+1});
     }
   },
   redraw : function(stopResetOfPosition, redrawAnnotations) {
