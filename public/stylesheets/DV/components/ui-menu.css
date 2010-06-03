@@ -1,4 +1,3 @@
-/* Tabs styling in the menu */
 #DV-Controls{
   background-color:#f0f4f5;
   height:37px;
@@ -8,22 +7,24 @@
   position:relative;
 }
 
-
 .DV-views{
   list-style-type:none;
   float:left;
   display:inline;
   margin:0 0 0 10px; padding:0;
 }
+
 .DV-views div{
   list-style-type:none;
   float:left;
   display:inline;
   margin:8px 0 0; padding:0;
 }
+
 .DV-ie6 .DV-views{
   position:absolute;
 }
+
 .DV-views div span{
   display:block;
   padding:8px 14px; 
@@ -38,13 +39,16 @@
   text-transform:uppercase;
   color:#666;  
 }
+
 .DV-ie6 .DV-views div span{
   display:inline-block;
   padding-bottom:7px;
 }
+
 .DV-views div.DV-first span{
   border-left:1px solid #ababab;  
 }
+
 .DV-views div span:hover,
 .DV-viewDocument .DV-views #DV-documentView span,
 .DV-viewAnnotations .DV-views #DV-annotationView span,
@@ -54,6 +58,7 @@
   background-color:#fff;
   color:#000;
 }
+
 .DV-views div a:focus{
   outline:0;
 }
