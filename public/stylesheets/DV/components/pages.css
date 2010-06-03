@@ -1,23 +1,18 @@
 #DV-documentCell{
   background-color:#ccc;
 }
+
 #DV-documentCell.DV-coverVisible{
   background-color:#444;
 }
+
 .DV-cover{
   left:0;
   position:absolute;
   top:0;
   visibility:visible;
   z-index:1000;
-
 }
-
-/*.DV-ie6 .DV-cover{
-  display:none !important;
-  filter: none;
-}*/
-
 
 .DV-pageMeta{
   font-family:Arial,Helvetica,sans-serif;
@@ -28,6 +23,7 @@
   position:absolute;
   z-index:20101;
 }
+
 .DV-pageNumber  {
   display:inline;
   float:left;
@@ -40,9 +36,11 @@
   font-weight:bold;
   padding-left:8px;  
 }
+
 .DV-annotation .DV-pageNumber{
   display:none;
 }
+
 .DV-pageNumber{
   margin-top:20px;
 }
@@ -51,16 +49,18 @@
   margin-left:12px;
   position:absolute;
 }
+
 .DV-viewAnnotations .DV-pageNumber{
   display:inline;
   float:left;
-  font-family:arial;
+  font-family:Arial,Helvetica,sans-serif;
   font-size:10px;
   margin-left:12px;
   margin-top:10px;
   position:relative;
   z-index:1200;
 }
+
 .DV-page{
   position:relative;
   left:0;
@@ -71,7 +71,6 @@
   overflow:visible;
 }
 
-
 .DV-pageImage{
   visibility:hidden;
   position:absolute;
@@ -80,10 +79,6 @@
   left:0;
 }
 
-
-/*.DV-ie6 #DV-pages{
-  background-color:#333;
-}*/
 .DV-loaded .DV-pageImage{
   visibility:visible;
   -moz-user-select:none;
@@ -106,6 +101,7 @@
   background-color:#444;
   cursor:pointer;
 }
+
 #DV-pages.DV-coverVisible .DV-page{
   -moz-box-shadow: 0 0 1em #333;
   -webkit-box-shadow: 0 0 1em #333;
@@ -122,6 +118,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
   filter: alpha(opacity=45);
 }
+
 .DV-coverVisible .DV-cover{
   background-color:#000;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";  
@@ -129,13 +126,16 @@
   opacity:.6;  
   cursor:pointer !important;
 }
+
 .DV-coverVisible .DV-page,
 .DV-coverVisible #DV-pageCollection{
   cursor:pointer !important;  
 }
+
 .DV-loading .DV-pageImage{
   visibility:hidden !important;
 }
+
 .DV-loading-top,
 .DV-loading-bottom{
   right:0;
@@ -148,13 +148,16 @@
   font-size:10px;
   text-align:center;
 }
+
 .DV-loaded .DV-loading-bottom{
   bottom:0;
 }
+
 .DV-loaded .DV-loading-top,
 .DV-loaded .DV-loading-bottom{
   display:none;
 }
+
 .DV-set{
   position:absolute;
   top:0;
@@ -169,6 +172,7 @@
   padding-left:70px;
   z-index:15999;  
 }
+
 .DV-activePage{
   z-index:16000 !important;
 }
