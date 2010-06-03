@@ -1,19 +1,24 @@
 .DV-viewSearch #DV-pages{
   background-color:#999;
 }
+
 .DV-viewSearch #DV-textPage{
   background-color:#eee;
 }
+
 .DV-viewSearch .DV-zoomControls{
   display:none;
 }
+
 .DV-viewSearch #DV-pageCollection{
   cursor: text;
 }
+
 .DV-viewSearch #DV-annotations,
 .DV-viewSearch #DV-bar{
   display:none;
 }
+
 .DV-viewSearch #DV-search,
 .DV-viewSearch #DV-searchBar{
   display:block;
@@ -27,6 +32,7 @@
 .DV-viewSearch #DV-textPage{
   margin-top:50px;
 }
+
 .DV-viewSearch #DV-textCurrentPage{
   top:60px;
 }
@@ -36,16 +42,20 @@
 .DV-viewSearch .DV-annotationMarker{
   display:none !important;
 }
+
 .DV-viewSearch #DV-sidebar #DV-well .DV-chaptersContainer div.DV-hasChildren div.DV-first{
   display:block !important;
 }
+
 .DV-viewSearch #DV-sidebar #DV-well .DV-chaptersContainer div.DV-hasChildren div.DV-first span.DV-trigger{
   margin-left:-1px;
 }
+
 .DV-viewSearch #DV-textContents,
 .DV-viewSearch #DV-textPage{
   background-color:#c5c5c5;
 }
+
 .DV-viewSearch .DV-annotationMarker,
 .DV-viewSearch .DV-chapter{
   margin-left:14px;
