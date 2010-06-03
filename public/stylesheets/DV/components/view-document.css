@@ -6,11 +6,13 @@
 #p2{
   display:none;
 }
+
 .DV-viewDocument #p0,
 .DV-viewDocument #p1,
 .DV-viewDocument #p2{
   display:block;
 }
+
 .DV-coverVisible .DV-viewDocument #p0,
 .DV-coverVisible .DV-viewDocument #p1,
 .DV-coverVisible .DV-viewDocument #p2{
