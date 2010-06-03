@@ -7,6 +7,7 @@
   padding: 0 0 10px;
   line-height:16px;
 }
+
 #DV-supplemental{
   padding-top:8px;
   margin-top:15px;
@@ -21,10 +22,12 @@
   padding-left: 0;
   padding-bottom: 4px;
 }
+
 #DV-storyLink a,
 #DV-pdfLink a {
   text-decoration: none;
 }
+
 #DV-storyLink a:hover,
 #DV-pdfLink a:hover {
   text-decoration:underline;
@@ -45,12 +48,15 @@
   top:10px;
   cursor:pointer;
 }
+
 #DV-previous:hover{
   background-position: -34px 0;
 }
+
 #DV-previous:focus {
   outline: 0;
 }
+
 #DV-next{
   background-position: -68px 0;
   width:34px;
@@ -61,12 +67,15 @@
   top:10px;
   cursor:pointer;
 }
+
 #DV-next:hover{
   background-position: -102px 0;
 }
+
 #DV-next:focus {
   outline: 0;
 }
+
 .DV-pageNumberContainer{
   width:154px;
   text-align:center;
@@ -74,9 +83,11 @@
   left:45px;
   top:10px;
 }
+
 .DV-ie .DV-pageNumberContainer{
   margin-top:5px;
 }
+
 #DV-currentPagePrefix,
 #DV-currentPageSuffix,
 #DV-currentAnnotationPrefix{
@@ -84,12 +95,12 @@
   font-size:12px;
   color:#333;
 }
+
 .DV-ie #DV-currentPagePrefix,
 .DV-ie #DV-currentPageSuffix,
 .DV-ie #DV-currentAnnotationPrefix{
   vertical-align:top;
 }
-
 
 #DV-currentPage{
   background-color:#fff;
@@ -108,10 +119,10 @@
   margin-right:5px;
   position:relative;
 }
+
 .DV-ie #DV-currentPage{
   margin-top:-5px;
 }
-
 
 #DV-well #DV-navControls{
   width:248px;
@@ -122,6 +133,7 @@
   z-index:10000;
   background-position: 0 bottom;
 }
+
 #DV-Controls #DV-navControls {
   position: absolute;
   top: 7px;
@@ -129,21 +141,25 @@
   z-index: 10;
   right: 4px;
 }
-  #DV-docViewer.DV-searchable #DV-Controls #DV-navControls {
-    right: auto;
-    left: 50%;
-    margin-left: -124px;
-  }
-  #DV-Controls #DV-navControls > a, #DV-Controls #DV-navControls > div {
-    top: 0; margin-top: 0;
-  }
+
+#DV-docViewer.DV-searchable #DV-Controls #DV-navControls {
+  right: auto;
+  left: 50%;
+  margin-left: -124px;
+}
+
+#DV-Controls #DV-navControls > a, #DV-Controls #DV-navControls > div {
+  top: 0; 
+  margin-top: 0;
+}
 
 .DV-navigation{
   padding:5px 10px;
   margin-top:50px;
 }
+
 #DV-ie7 .DV-navigation{
-    margin-top:30px;
+  margin-top:30px;
 }
 
 .DV-contentsHeader,
@@ -158,6 +174,7 @@
   clear:left;
   display:block;
 }
+
 .DV-chapter,
 .DV-annotationMarker{
   margin:0 0 12px 2px;
@@ -170,9 +187,11 @@
 .DV-annotationMarker{
   margin-left:14px;
 }
+
 .DV-annotationMarker .DV-trigger span{
   visibility:hidden;
 }
+
 .DV-annotationMarker .DV-trigger:hover span{
   visibility:visible;
 }
@@ -181,6 +200,7 @@
   display:none;
   margin-left: 14px;
 }
+
 .DV-hasChildren .DV-annotationMarker{
   margin:0 0 4px;
   padding:0 0 0 8px;
@@ -190,9 +210,11 @@
   font-weight:normal;
   margin-left:12px;
 }
+
 .DV-ie .DV-annotationMarker{
   margin-bottom:3px;
 }
+
 .DV-chapter div.DV-first{
   margin: 0 0 5px 0;
   background:none;
@@ -200,6 +222,7 @@
   padding:0;
   font-weight:bold;
 }
+
 .DV-chapter div.DV-first:after {
     content: ".";
     display: block;
@@ -222,6 +245,7 @@
 .DV-navigation .DV-noChildren{
   margin-left:14px;
 }
+
 .DV-navigation div.DV-first span.DV-trigger{
   font-size:12px;
   float:left;
@@ -244,21 +268,24 @@
   display:inline;
   margin:0; padding:0;
 }
+
 .DV-navigation div.DV-expanded div.DV-first span.DV-expander{
   background: url(../../../images/DV/expanders.gif) no-repeat 0 6px;
 }
-
 
 .DV-navigation div span{
   text-decoration:none;
   color:#004276;
 }
+
 .DV-navigation div span:focus{
   outline:0;
 }
+
 .DV-navigation div span:hover{
   text-decoration:underline;
 }
+
 .DV-navigation div span span{
   color:#666;
   font-size:10px;
@@ -270,6 +297,7 @@
   color:#000;
   font-weight:bold;
 }
+
 #DV-descriptionToggle{
   float:left;
   display:inline;
@@ -280,9 +308,11 @@
   margin-right:6px;
   background: url(../../../images/DV/expanders.gif) no-repeat 0 -31px;
 }
+
 #DV-descriptionToggle.DV-showDescription{
   background: url(../../../images/DV/expanders.gif) no-repeat 0 6px;
 }
+
 #DV-descriptionText{
   clear:left;
   padding:14px;
@@ -304,9 +334,9 @@
   position:relative;
   text-align:center;
   width:27px;
-/*  outline:none;*/
   margin-top:0;
 }
+
 .DV-ie .DV-pageNumberContainer input{
   margin-top:-5px;
 }
