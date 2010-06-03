@@ -167,8 +167,8 @@ DV.Schema.helpers = {
 
     // Is the given URL on a remote domain?
     isCrossDomain : function(url) {
-      var urlDomain = url.match(this.HOST_EXTRACTOR)[1];
-      return urlDomain != window.location.host;
+      var match = url.match(this.HOST_EXTRACTOR);
+      return match && (match[1] != window.location.host);
     },
     resetScrollState: function(){
       this.elements.window.scrollTop(0);
