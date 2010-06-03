@@ -120,12 +120,14 @@
 
 .DV-showEdit {
   display: none;
-  float: right;
-  margin-right: 10px;
+  float: left;
+  margin-left: 12px;
   color: #004276;
   cursor: pointer;
-  text-decoration: underline;
 }
+  .DV-showEdit:hover {
+    text-decoration: underline;
+  }
   .DV-isContributor .DV-showEdit,
   .DV-isOwner .DV-showEdit {
     display: inline;
@@ -147,7 +149,6 @@
 }
 .DV-viewAnnotations .DV-hd .DV-pagination{
   padding-right:0;
-  width:100px;
   display:block;
 }
 .DV-viewAnnotations .DV-hd .DV-pagination .DV-gotoPage{
@@ -404,7 +405,6 @@
 }
   .DV-annotationRegion.DV-private, .DV-annotation.DV-private .DV-annotationRegion {
     background: #5aa8ff;
-    border: 1px solid #4283ff;
   }
   .DV-annotationHover .DV-private, .DV-annotationRegion.DV-private.active,
   .DV-annotationHover .DV-private .DV-annotationRegion, .DV-annotation.DV-private .DV-annotationRegion.active {

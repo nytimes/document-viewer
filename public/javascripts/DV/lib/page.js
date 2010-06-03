@@ -101,10 +101,10 @@ DV.page = DV.Class.extend({
       var me = this;
       _.defer($j.proxy(this.loadImage,this));
     }else{
-      
+
     }
     this.sizeImage();
-    
+
     this.position();
 
     // Only draw annotations if page number has changed or forceAnnotationRedraw boolean is passed
@@ -195,16 +195,16 @@ DV.page = DV.Class.extend({
     if(this.loadTimer){
       clearTimeout(this.loadTimer);
       delete this.loadTimer;
-    }    
+    }
 
     this.el.removeClass('DV-loaded').addClass('DV-loading');
 
 
 
     // On image load, update the height for the page and initiate drawImage method to resize accordingly
-    var pageModel       = this.model_pages;    
+    var pageModel       = this.model_pages;
     var preloader       = $j(new Image());
-    var me              = this;    
+    var me              = this;
 
     var lazyImageLoader = function(){
       if(me.loadTimer){
@@ -213,25 +213,19 @@ DV.page = DV.Class.extend({
       }
       preloader.bind('load readystatechange',function(e){
          if(this.complete || (this.readyState == 'complete' && e.type == 'readystatechange')){
-           pageModel.updateHeight(preloader[0], me.index);           
+           pageModel.updateHeight(preloader[0], me.index);
            me.drawImage(preloader[0].src);
            clearTimeout(me.loadTimer);
-           delete me.loadTimer;           
+           delete me.loadTimer;
          }
       });
-      
 
-      //   pageModel.updateHeight(preloader, me.index);
-      //   me.drawImage(preloader.src);
-      //   clearTimeout(me.loadTimer);
-      //   delete me.loadTimer;        
-      // };
-      var src       = me.model_pages.imageURL(me.index);
+      var src = me.model_pages.imageURL(me.index);
       preloader[0].src = '#';
       preloader[0].src = src;
     };
 
-    this.loadTimer = setTimeout(lazyImageLoader, 350);
+    this.loadTimer = setTimeout(lazyImageLoader, 150);
     this.application.pageSet.redraw();
 
   },
