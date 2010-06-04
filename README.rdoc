@@ -16,13 +16,11 @@ All core functionality is supported as far back as IE6. However, users with mode
 
 Take a peek at the plain.html template to see how to load in a Document. All you really need to do is point to a Document Viewer JSON file and specify the target element to embed the viewer:
 
-  DV.load(JSON_FILE, { hidePageOverflow: true|false, container: element_selector, embedded: true|false });
+  DV.load(JSON_FILE, { container: element_selector });
 
 *JSON_FILE*: Either an inline json object, or the path to a remote json object - http://documents.nytimes.com/goldman-sachs-internal-emails.json 
 
-* *hidePageOverflow*: If true, a stylesheet will be added that will hide the page scrollbars. 
 * *container*: The element to contain the Document Viewer - '#DV-container'
-* *embedded*: If true, it will hide the overflow of the page and expand to the container element constraints
 
 
 == Data Formats: Documents
