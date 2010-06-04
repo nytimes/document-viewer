@@ -76,7 +76,7 @@
 .DV-ie .DV-annotationWrapper{
   background-image:url(../../../images/DV/embed/box-right.gif);
 }
-  
+
 .DV-ie .DV-private .DV-annotationWrapper {
   background-image:url(../../../images/DV/embed/box-right-private.gif);
 }
@@ -305,7 +305,7 @@
   top:0;
 }
 
-.DV-annotationText, 
+.DV-annotationText,
 .DV-annotationTextArea{
   color:#333;
   font-size:14px;
@@ -421,7 +421,6 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 
 .DV-ie .DV-activeAnnotation .DV-annotationTab {
   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image, src='../../../images/DV/tabActive-ie.png');
-  background-image:none;
 }
 
 .DV-ie .DV-activeAnnotation.DV-private .DV-annotationTab {
@@ -442,11 +441,11 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
   background: #5aa8ff;
 }
 
-.DV-annotationHover .DV-private, 
+.DV-annotationHover .DV-private,
 .DV-annotationRegion.DV-private.active,
-.DV-annotationHover .DV-private .DV-annotationRegion, 
+.DV-annotationHover .DV-private .DV-annotationRegion,
 .DV-annotation.DV-private .DV-annotationRegion.active {
-  -moz-box-shadow:0 0 10px #666; 
+  -moz-box-shadow:0 0 10px #666;
   -webkit-box-shadow:0 0 10px #666;
 }
 
