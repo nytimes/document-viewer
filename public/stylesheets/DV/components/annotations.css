@@ -677,6 +677,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 }
 
 .DV-annotationRegionBorder{
+  display: none;
   border:3px solid #F8DF42;
   margin-left:-3px;
   position:absolute;

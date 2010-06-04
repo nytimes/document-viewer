@@ -109,8 +109,3 @@
 .DV-viewAnnotations #DV-sidebar #DV-well .DV-chaptersContainer div.DV-first span.DV-trigger{
   font-weight:bold !important;
 }
-
-/* ---------------------------------------------------- connector */
-.DV-viewAnnotations .DV-annotationRegionBorder{
-  display:none;
-}

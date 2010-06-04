@@ -32,3 +32,7 @@
 .DV-viewDocument .DV-coverVisible .DV-cover{
   cursor:pointer !important;
 }
+
+.DV-viewDocument .DV-annotationRegionBorder {
+  display: block;
+}
