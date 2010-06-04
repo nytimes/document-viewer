@@ -394,10 +394,8 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 
 .DV-coverVisible .DV-annotationTab,
 .DV-annotationActivated .DV-annotationTab{
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter:
-  progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png')
-  progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png');
   opacity:.6;
 }
 
@@ -408,10 +406,8 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 
 .DV-coverVisible .DV-activeAnnotation .DV-annotationTab,
 .DV-annotationHover .DV-annotationTab{
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter:
-  progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png')
-  progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', src='../../../images/DV/tab.png');
   opacity:1 !important;
 }
 
