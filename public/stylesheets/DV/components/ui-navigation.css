@@ -16,15 +16,13 @@
 
 #DV-storyLink,
 #DV-pdfLink {
-  font-family:Arial,Helvetica,sans-serif;
-  font-weight:normal;
-  font-size:11px;
   padding-left: 0;
   padding-bottom: 4px;
 }
 
 #DV-storyLink a,
 #DV-pdfLink a {
+  font: normal 11px Arial, sans-serif;
   text-decoration: none;
 }
 
@@ -149,7 +147,7 @@
 }
 
 #DV-Controls #DV-navControls > a, #DV-Controls #DV-navControls > div {
-  top: 0; 
+  top: 0;
   margin-top: 0;
 }
 
