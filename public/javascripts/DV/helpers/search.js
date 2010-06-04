@@ -1,6 +1,6 @@
 _.extend(DV.Schema.helpers, {
   getSearchResponse: function(query){
-    var handleResponse = _.bind(function(response){
+    var handleResponse = $j.proxy(function(response){
       this.application.searchResponse = response;
       var hasResults = (response.results.length > 0) ? true : false;
 

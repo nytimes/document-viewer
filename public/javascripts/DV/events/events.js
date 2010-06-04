@@ -116,7 +116,7 @@ DV.Schema.events = {
       return processText(DV.Schema.text[pageIndex]);
     }
 
-    var handleResponse = _.bind(function(response) {
+    var handleResponse = $j.proxy(function(response) {
 
       processText(DV.Schema.text[pageIndex] = response);
     }, this);

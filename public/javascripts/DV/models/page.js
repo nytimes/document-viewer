@@ -88,7 +88,7 @@
       this.averageHeight = ((this.averageHeight * this.numPagesLoaded) + image.height) / (this.numPagesLoaded + 1);
       this.numPagesLoaded += 1;
       if (this.updateTimeout) clearTimeout(this.updateTimeout);
-      this.updateTimeout = setTimeout(_.bind(function() {
+      this.updateTimeout = setTimeout($j.proxy(function() {
         this.updateTimeout = null;
         var newAverage = Math.round(this.averageHeight);
         if (Math.abs(newAverage - this.height) > 10) {

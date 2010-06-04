@@ -76,7 +76,7 @@
     this.pageX    = e.pageX;
     this.oldPageY = e.pageY;    
     
-    this.updateTimer = setInterval(_.bind(this.oldPositionUpdater,this),1200);
+    this.updateTimer = setInterval(jQuery.proxy(this.oldPositionUpdater,this),1200);
     
     this.toWatch.addClass(this.dragClassName);
     this.toWatch.mousemove(this.boundReporter);
