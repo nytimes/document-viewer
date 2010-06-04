@@ -1,5 +1,9 @@
 /* Only global rule. Hide overflow. */
-body, html{ overflow: hidden; };
+body, html{ 
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+};
 
 #DV-docViewer{
   position:relative;
