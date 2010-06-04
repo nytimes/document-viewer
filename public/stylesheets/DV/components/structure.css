@@ -1,4 +1,4 @@
-/* Only global rule. Hide overflow. */
+/* Only global rule. Hide overflow and padding/margin. */
 body, html{ 
   margin: 0;
   padding: 0;
