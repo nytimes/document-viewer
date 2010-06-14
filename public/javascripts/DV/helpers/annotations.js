@@ -1,4 +1,4 @@
-_.extend(DV.Schema.helpers, { 
+_.extend(DV.Schema.helpers, {
   getAnnotationModel : function(annoEl) {
     var annoId = parseInt(annoEl.attr('rel').match(/\d+/), 10);
     return this.models.annotations.getAnnotation(annoId);
@@ -20,7 +20,7 @@ _.extend(DV.Schema.helpers, {
 
     return false;
 
-  },  
+  },
   // Set of bridges to access annotation methods
   // Toggle
   annotationBridgeToggle: function(e){
@@ -46,19 +46,19 @@ _.extend(DV.Schema.helpers, {
     var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
     annotationObject.show();
   },
-  // Hide annotation  
+  // Hide annotation
   annotationBridgeHide: function(e){
     e.preventDefault();
     var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
     annotationObject.hide(true);
   },
-  // Jump to the next annotation  
+  // Jump to the next annotation
   annotationBridgeNext: function(e){
     e.preventDefault();
     var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
     annotationObject.next();
   },
-  // Jump to the previous annotation    
+  // Jump to the previous annotation
   annotationBridgePrevious: function(e){
     e.preventDefault();
     var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
@@ -67,7 +67,7 @@ _.extend(DV.Schema.helpers, {
   // Update currentpage text to indicate current annotation
   setAnnotationPosition: function(_position){
     this.elements.currentPage.text(_position);
-  },  
+  },
   // Update active annotation limits
   setActiveAnnotationLimits: function(annotation){
     var annotation = (annotation) ? annotation : this.application.activeAnnotation;
@@ -91,5 +91,5 @@ _.extend(DV.Schema.helpers, {
     }
 
 
-  }  
-});  
+  }
+});

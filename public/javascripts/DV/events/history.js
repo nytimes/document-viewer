@@ -62,9 +62,7 @@ _.extend(DV.Schema.events, {
     if(this.application.state === 'ViewText'){
       this.events.loadText(pageIndex);
     }else{
-
       this.models.document.setPageIndex(pageIndex);
-
       this.states.ViewText();
     }
   },

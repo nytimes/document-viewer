@@ -23,6 +23,7 @@ DV.Schema.events = {
 
   // Draw (or redraw) the visible pages on the screen.
   drawPages: function() {
+    if (DV.controller.state != 'ViewDocument') return;
     var doc           = this.models.document;
     var offsets       = doc.baseHeightsPortionOffsets;
     var scrollPos     = this.application.scrollPosition = this.elements.window[0].scrollTop;
