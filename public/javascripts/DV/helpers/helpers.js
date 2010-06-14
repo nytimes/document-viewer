@@ -51,7 +51,7 @@ DV.Schema.helpers = {
       $j('#DV-searchResults').delegate('span.DV-resultNext','click', $j.proxy(this.highlightNextMatch, this));
 
       // Prevent navigation elements from being selectable when clicked.
-      $('.DV-trigger').bind('selectstart', function(){ return false; });
+      $j('.DV-trigger').bind('selectstart', function(){ return false; });
 
       var boundToggle           = $j.proxy(this.annotationBridgeToggle, this);
       var boundDrawConnector    = $j.proxy(this.annotationBridgeDrawConnector,this);

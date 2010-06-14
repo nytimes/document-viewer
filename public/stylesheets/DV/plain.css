@@ -1,5 +1,11 @@
 /* DocumentCloud overrides to the DocViewer CSS go here: */
 
+/* Global rules, default for the plain style. */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 #DV-docViewer {
   border: 1px solid #c3c3c3;
 }
