@@ -143,11 +143,6 @@
   text-decoration: underline;
 }
 
-.DV-isContributor .DV-showEdit,
-.DV-isOwner .DV-showEdit {
-  display: inline;
-}
-
 .DV-hd .DV-pagination{
   margin: 0;
   text-align:center;
@@ -508,7 +503,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 }
 
 .DV-editing .DV-editHidden {
-  display: none;
+  display: none !important;
 }
 
 .DV-annotation .DV-contributorVisible,

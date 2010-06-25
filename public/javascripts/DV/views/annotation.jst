@@ -26,7 +26,7 @@
             <em>|</em>
             <span class="DV-trigger DV-annotationNext" title="Next Annotation">Next</span>
           </span>
-          <span class="DV-textLink DV-showEdit DV-editHidden DV-editorVisible">edit</span>
+          <span class="DV-textLink DV-showEdit DV-editHidden <%= access == 'public' ? 'DV-ownerVisible' : 'DV-contributorVisible' %>">edit</span>
         </div>
       <div class="DV-bd">
         <div class="DV-annotationExcerpt" style="height:<%= excerptHeight %>px;">
