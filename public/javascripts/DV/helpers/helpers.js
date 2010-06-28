@@ -37,7 +37,7 @@ DV.Schema.helpers = {
         DV.history.save('text/p'+context.models.document.currentPage());
         states.ViewText();
       });
-      $j('.DV-pagination').delegate('span.DV-gotoPage','click', $j.proxy(this.gotoPage, this));
+      $j('.DV-annotationGoto').delegate('.DV-trigger','click', $j.proxy(this.gotoPage, this));
 
       $j('form#DV-searchDocument').submit(this.events.compile('search'));
       $j('#DV-searchBar').delegate('#DV-closeSearch','click',function(e){
@@ -58,16 +58,16 @@ DV.Schema.helpers = {
       var boundRemoveConnector  = $j.proxy(this.annotationBridgeRemoveConnector,this);
       var collection            = this.elements.collection;
 
-      collection.delegate('span.DV-annotationTab','click', boundToggle);
-      collection.delegate('span.DV-annotationTab','mouseover', boundDrawConnector);
-      collection.delegate('span.DV-annotationTab','mouseout', boundRemoveConnector);
+      collection.delegate('.DV-annotationTab','click', boundToggle);
+      collection.delegate('.DV-annotationTab','mouseover', boundDrawConnector);
+      collection.delegate('.DV-annotationTab','mouseout', boundRemoveConnector);
 
-      collection.delegate('span.DV-annotationRegion','mouseover', boundDrawConnector);
-      collection.delegate('span.DV-annotationRegion','mouseout', boundRemoveConnector);
-      collection.delegate('span.DV-annotationRegion','click', $j.proxy(this.annotationBridgeShow, this));
+      collection.delegate('.DV-annotationRegion','mouseover', boundDrawConnector);
+      collection.delegate('.DV-annotationRegion','mouseout', boundRemoveConnector);
+      collection.delegate('.DV-annotationRegion','click', $j.proxy(this.annotationBridgeShow, this));
 
-      collection.delegate('span.DV-annotationNext','click', $j.proxy(this.annotationBridgeNext, this));
-      collection.delegate('span.DV-annotationPrevious','click', $j.proxy(this.annotationBridgePrevious, this));
+      collection.delegate('.DV-annotationNext','click', $j.proxy(this.annotationBridgeNext, this));
+      collection.delegate('.DV-annotationPrevious','click', $j.proxy(this.annotationBridgePrevious, this));
       collection.delegate('.DV-showEdit','click', $j.proxy(this.showAnnotationEdit, this));
       collection.delegate('.DV-cancelEdit','click', $j.proxy(this.cancelAnnotationEdit, this));
       collection.delegate('.DV-saveAnnotation','click', $j.proxy(this.saveAnnotation, this));
