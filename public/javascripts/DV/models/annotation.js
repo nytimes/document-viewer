@@ -37,21 +37,23 @@
         }
         adata._x1                   = Math.round(adata.x1 * zoom);
         adata._x2                   = Math.round(adata.x2 * zoom);
-        adata.top                   = adata._y1;
+        adata.top                   = adata._y1 - 6;
       }
+      
       adata.width                   = pageModel.width;
       adata.pageNumber              = adata.page;
       adata.bgWidth                 = adata.width;
       adata.bWidth                  = adata.width - 66;
-      adata.excerptWidth            = adata._x2 - adata._x1;
-      adata.excerptMarginLeft       = adata._x1 - 27;
+      adata.excerptWidth            = (adata._x2 - adata._x1) - 10;
+      adata.excerptMarginLeft       = adata._x1 - 18;
+      adata.excerptLeft             = adata._x1 - 25;      
       adata.excerptHeight           = adata._y2 - adata._y1;
       adata.index                   = adata.page - 1;
       adata.image                   = pageModel.imageURL(adata.index);
       adata.imageLeft               = adata._x1;
       adata.imageTop                = adata._y1 + 2;
       adata.imageWidth              = pageModel.width;
-      adata.imageHeight             = pageModel.height;
+      adata.imageHeight             = Math.round(pageModel.height * zoom);
       adata.regionLeft              = adata._x1;
       adata.regionWidth             = adata._x2 - adata._x1 ;
       adata.regionHeight            = adata._y2 - adata._y1;
@@ -88,11 +90,17 @@
 
     // Renders each annotation for the "Annotation List" tab, in order.
     renderAnnotationsByIndex: function(){
-      var rendered = _.map(this.bySortOrder, function(anno){ return anno.html; });
-      var html     = rendered.join('').replace(/id="DV-annotation-(\d+)"/g, function(match, id) {
+      var rendered  = _.map(this.bySortOrder, function(anno){ return anno.html; });
+      var html      = rendered.join('').replace(/id="DV-annotation-(\d+)"/g, function(match, id) {
         return 'id="DV-listAnnotation-' + id + '" rel="aid-' + id + '"';
       });
+      // removing unnecessary elements from list view
+      html          = html.replace(/<div class="DV\-annotationRegion" style=".*"><\/div>/g, function(match){
+        return '';
+      });
+      
 
+      
       $j('div#DV-annotations').html(html);
 
       this.renderAnnotationsByIndex.rendered  = true;
@@ -128,8 +136,9 @@
       var documentModel         = this.application.models.document;
       // asking for all, but css class .DV-getHeights sets the height to 0 for all annotations besides pageNotes
       // Why do this? To avoid making that loop any more exspensive than it already is
-      var pageAnnotations       = $j('div#DV-annotations').find('.DV-annotation');
-      var annotationsContainer  = $j('div#DV-annotations');
+      var annotationsContainer  = $j('div#DV-annotations');      
+      var pageAnnotations       = annotationsContainer.find('.DV-annotation');
+
       if($j('div#DV-docViewer').hasClass('DV-viewAnnotations') == false){
         annotationsContainer.addClass('DV-getHeights');
       }
@@ -143,7 +152,9 @@
 
       $j(pageAnnotations).each(function(n,_el){
         var _height = $j(_el)[measurement]();
-        if(_.isNumber(_height) && _height != 0){
+        
+        if(_.isNumber(_height) && _height >= 20){
+        
           me.offsetsAdjustments[annos[n].pageNumber] = _height;
           me.offsetAdjustmentSum                += _height;
         }
@@ -155,12 +166,12 @@
       for(var i = 0,len = documentModel.totalPages; i < len; i++){
 
         if(me.offsetsAdjustments[i]){
+            
           offset += me.offsetsAdjustments[i];
         }
         me.offsetsAdjustments[i]  = offset;
       }
-
-
+      
       annotationsContainer.removeClass('DV-getHeights');
     },
 
