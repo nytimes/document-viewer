@@ -53,7 +53,6 @@ DV.pageSet = DV.Class.extend({
   },
   // reflow the pages without causing the container to resize or annotations to redraw
   simpleReflowPages: function(){
-    // this.application.models.pages.resize();
     this.application.helpers.setActiveAnnotationLimits();
     this.redraw(false, false);
   },
