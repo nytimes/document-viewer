@@ -5,42 +5,32 @@
   display:none;
 }
 
-.DV-viewAnnotations #DV-annotations{
+.DV-viewAnnotations #DV-annotations,
+.DV-viewAnnotations .DV-annotationContent{
   display:block;
 }
 
 .DV-viewAnnotations .DV-annotationRegion{
-  display:none;
   filter:none;
+  background-color:#000;
+  display:none !important;  
 }
 
 .DV-viewAnnotations .DV-annotationTab{
-  background:none;
-  filter:none;
+  filter:none;  
+  display:none !important;  
+}
+
+.DV-viewAnnotations .DV-annotationGoto{
+  display:inline;
 }
 
 .DV-viewAnnotations .DV-pageNoteAnnotationTab{
-  background:none;
-  margin-top:7px !important;
-}
-
-.DV-viewAnnotations .DV-pageNote .DV-tl{
-  background-image:url(../../../images/DV/embed/box-tl.png);
-}
-
-.DV-ie .DV-viewAnnotations .DV-pageNote .DV-tl{
-  background-image:url(../../../images/DV/embed/box-tl.gif);
-}
-
-.DV-ie .DV-viewAnnotations .DV-annotationTab,
-.DV-ie .DV-viewAnnotations .DV-pageNoteAnnotationTab{
-  background:none;
-  filter:none;
+  display:none;
 }
 
 .DV-viewAnnotations .DV-annotationNext,
-.DV-viewAnnotations .DV-annotationPrevious,
-.DV-viewAnnotations em{
+.DV-viewAnnotations .DV-annotationPrevious{
   display:none !important;
 }
 
@@ -54,8 +44,24 @@
   position:relative;
   top:0 !important;
   display: inline-block;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 0 auto 25px;
+  
+  background: rgb(236,209,58);
+  background: rgba(236,209,58,.9);
+  
+  -webkit-border-radius:4px;            
+  -moz-border-radius:4px;      
+  border-radius:4px;  
+  
+  -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+        
+  -moz-box-shadow: 1px 1px 3px rgb(0,0,0);
+  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+        
+  box-shadow: 1px 1px 3px rgb(0,0,0);              
+  box-shadow: 1px 1px 3px rgba(0,0,0,.2);  
+  
 }
 
 /*hack to control scrollbar width in webkit*/
@@ -82,9 +88,6 @@
   display:inline;
 }
 
-.DV-viewAnnotations .DV-pageNote {
-  padding-top:0;
-}
 
 .DV-ie .DV-viewAnnotations .DV-annotationLabel {
   float:none;
@@ -99,13 +102,4 @@
 
 .DV-viewAnnotations .DV-hasChildren{
   display:block !important;
-}
-
-.DV-viewAnnotations #DV-sidebar #DV-well .DV-chaptersContainer div span.DV-trigger{
-  font-weight:normal !important;
-  color:#004276 !important;
-}
-
-.DV-viewAnnotations #DV-sidebar #DV-well .DV-chaptersContainer div.DV-first span.DV-trigger{
-  font-weight:bold !important;
 }
