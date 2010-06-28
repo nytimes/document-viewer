@@ -1,3 +1,13 @@
+.DV-pagination{
+  text-align:center;
+  float:none;
+  display:inline;
+  color:#666;
+  text-decoration:uppercase;
+  background-color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
 #DV-searchBox.clearfix {
   position: absolute;
   right: 8px; top: 7px;
@@ -102,10 +112,6 @@
 
 .DV-ViewSearch #DV-searchBar{
   display:block;
-}
-
-.DV-pagination{
-  margin: 14px auto 0;
 }
 
 #DV-closeSearch{
