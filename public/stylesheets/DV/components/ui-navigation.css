@@ -34,17 +34,16 @@
 #DV-previous, #DV-next {
   background-image:url(../../../images/DV/embed/controlsArrows.gif);
   background-repeat: no-repeat;
+  width:34px; height:24px;
+  position:absolute;
+  top: 10px;
+  cursor:pointer;
+  text-indent:-1000em;
 }
 
 #DV-previous{
   background-position: 0 0;
-  width:34px;
-  height:24px;
-  text-indent:-1000em;
-  position:absolute;
   left:10px;
-  top:10px;
-  cursor:pointer;
 }
 
 #DV-previous:hover{
@@ -57,13 +56,7 @@
 
 #DV-next{
   background-position: -68px 0;
-  width:34px;
-  height:24px;
-  text-indent:-1000em;
-  position:absolute;
-  left:208px;
-  top:10px;
-  cursor:pointer;
+  right: 10px;
 }
 
 #DV-next:hover{
@@ -123,37 +116,12 @@
 }
 
 #DV-well #DV-navControls{
-  width:248px;
-  height:50px;
-  position:absolute;
-  top:0;
-  right:17px;
-  z-index:10000;
+  height: 50px;
   background-position: 0 bottom;
 }
 
-#DV-Controls #DV-navControls {
-  position: absolute;
-  top: 7px;
-  width: 248px; height: 30px;
-  z-index: 10;
-  right: 4px;
-}
-
-#DV-docViewer.DV-searchable #DV-Controls #DV-navControls {
-  right: auto;
-  left: 50%;
-  margin-left: -124px;
-}
-
-#DV-Controls #DV-navControls > a, #DV-Controls #DV-navControls > div {
-  top: 0;
-  margin-top: 0;
-}
-
 .DV-navigation{
-  padding:5px 10px;
-  margin-top:50px;
+  padding: 10px;
 }
 
 #DV-ie7 .DV-navigation{

@@ -82,16 +82,6 @@ DV.Schema.events = {
       application.busy = false;
     }
   },
-  scale: function(){
-    var helpers = this.helpers;
-    var windowDimensions = helpers.getWindowDimensions();
-    if(
-      windowDimensions.height != this.application.windowDimensions.height ||
-      windowDimensions.width != this.application.windowDimensions.width){
-
-        helpers.setWindowSize(windowDimensions);
-    }
-  },
 
   loadText: function(pageIndex,afterLoad){
 

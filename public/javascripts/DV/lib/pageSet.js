@@ -111,7 +111,7 @@ DV.pageSet = DV.Class.extend({
     var width   = this.application.models.pages.zoomLevel - padding;
     $j('#DV-textContents').width(width);
     $j('#DV-textPage').width(width + padding);
-    this.application.elements.collection.css({'width' : width + padding + padding, height : 'auto'});
+    this.application.elements.collection.css({'width' : width + padding + padding});
   },
 
   // draw the pages

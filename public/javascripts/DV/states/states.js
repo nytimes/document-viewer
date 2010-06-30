@@ -40,7 +40,6 @@ DV.Schema.states = {
 
       // BindEvents
       this.helpers.bindEvents(this);
-      this.helpers.addObserver('scale');
     },
     InitialLoad: function(){
       this.models.document.computeOffsets();
