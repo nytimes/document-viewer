@@ -68,8 +68,6 @@
       DV.controller.elements.collection.css({width : this.width + 110 });
     },
 
-    // When a new image is loaded, call updateHeight to check if its aspect
-    // ratio is larger than previously seen. If so, re-scale.
     updateHeight: function(image, pageIndex) {
       var h = this.getPageHeight(pageIndex);
       if (h === image.height) return;

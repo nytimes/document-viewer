@@ -46,7 +46,6 @@ DV.pageSet = DV.Class.extend({
   },
   // basic reflow to ensure zoomlevel is right, pages are in the right place and annotation limits are correct
   reflowPages : function() {
-
     this.application.models.pages.resize();
     this.application.helpers.setActiveAnnotationLimits();
     this.redraw(false, true);

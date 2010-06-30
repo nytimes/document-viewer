@@ -39,14 +39,14 @@
         adata._x2                   = Math.round(adata.x2 * zoom);
         adata.top                   = adata._y1 - 6;
       }
-      
+
       adata.width                   = pageModel.width;
       adata.pageNumber              = adata.page;
       adata.bgWidth                 = adata.width;
       adata.bWidth                  = adata.width - 66;
       adata.excerptWidth            = (adata._x2 - adata._x1) - 10;
       adata.excerptMarginLeft       = adata._x1 - 18;
-      adata.excerptLeft             = adata._x1 - 25;      
+      adata.excerptLeft             = adata._x1 - 25;
       adata.excerptHeight           = adata._y2 - adata._y1;
       adata.index                   = adata.page - 1;
       adata.image                   = pageModel.imageURL(adata.index);
@@ -94,13 +94,7 @@
       var html      = rendered.join('').replace(/id="DV-annotation-(\d+)"/g, function(match, id) {
         return 'id="DV-listAnnotation-' + id + '" rel="aid-' + id + '"';
       });
-      // removing unnecessary elements from list view
-      html          = html.replace(/<div class="DV\-annotationRegion" style=".*"><\/div>/g, function(match){
-        return '';
-      });
-      
 
-      
       $j('div#DV-annotations').html(html);
 
       this.renderAnnotationsByIndex.rendered  = true;
@@ -136,42 +130,34 @@
       var documentModel         = this.application.models.document;
       // asking for all, but css class .DV-getHeights sets the height to 0 for all annotations besides pageNotes
       // Why do this? To avoid making that loop any more exspensive than it already is
-      var annotationsContainer  = $j('div#DV-annotations');      
-      var pageAnnotations       = annotationsContainer.find('.DV-annotation');
+      var annotationsContainer  = $j('div#DV-annotations');
+      var pageAnnotationEls     = annotationsContainer.find('.DV-pageNote');
+      var me = this;
 
       if($j('div#DV-docViewer').hasClass('DV-viewAnnotations') == false){
         annotationsContainer.addClass('DV-getHeights');
       }
 
-      // Start with a zero offset, add on as we find pageNotes
-      var me          = this;
-      var annos       = this.bySortOrder;
-
-      // IE seems to incorrectly calculate outerheight
-      var measurement = ($j.browser.msie === true && $j.browser.version == 6) ? 'height' : 'outerHeight';
-
-      $j(pageAnnotations).each(function(n,_el){
-        var _height = $j(_el)[measurement]();
-        
-        if(_.isNumber(_height) && _height >= 20){
-        
-          me.offsetsAdjustments[annos[n].pageNumber] = _height;
-          me.offsetAdjustmentSum                += _height;
-        }
-
-        _height = 0;
+      // First, collect the list of page annotations, and associate them with
+      // their DOM elements.
+      var pageAnnos = [];
+      _.each(_.select(this.bySortOrder, function(anno) {
+        return anno.type == 'page';
+      }), function(anno, i) {
+        anno.el = pageAnnotationEls[i];
+        pageAnnos[anno.pageNumber] = anno;
       });
 
-      var offset      = 0;
-      for(var i = 0,len = documentModel.totalPages; i < len; i++){
-
-        if(me.offsetsAdjustments[i]){
-            
-          offset += me.offsetsAdjustments[i];
+      // Then, loop through the pages and store the cumulative offset due to
+      // page annotations.
+      for (var i = 0, len = documentModel.totalPages; i < len; i++) {
+        if (pageAnnos[i]) {
+          var height = $j(pageAnnos[i].el).outerHeight();
+          if (height >= 20) this.offsetAdjustmentSum += height;
         }
-        me.offsetsAdjustments[i]  = offset;
+        this.offsetsAdjustments[i] = this.offsetAdjustmentSum;
       }
-      
+
       annotationsContainer.removeClass('DV-getHeights');
     },
 
