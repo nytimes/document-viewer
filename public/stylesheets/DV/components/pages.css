@@ -34,7 +34,7 @@
   zoom:1;
   font-size:10px;
   font-weight:bold;
-  padding-left:8px;  
+  padding-left:8px;
 }
 
 .DV-annotation .DV-pageNumber{
@@ -46,7 +46,7 @@
 }
 
 .DV-layer-page .DV-pageNumber{
-  margin-left:12px;
+  margin-left:10px;
   position:absolute;
 }
 
@@ -121,15 +121,15 @@
 
 .DV-coverVisible .DV-cover{
   background-color:#000;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
   filter: alpha(opacity=55);
-  opacity:.6;  
+  opacity:.6;
   cursor:pointer !important;
 }
 
 .DV-coverVisible .DV-page,
 .DV-coverVisible #DV-pageCollection{
-  cursor:pointer !important;  
+  cursor:pointer !important;
 }
 
 .DV-loading .DV-pageImage{
@@ -169,8 +169,8 @@
 #p1,
 #p2{
   display:none;
-  padding-left:70px;
-  z-index:15999;  
+  padding-left:60px;
+  z-index:15999;
 }
 
 .DV-activePage{
