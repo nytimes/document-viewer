@@ -68,6 +68,7 @@
       DV.controller.elements.collection.css({width : this.width + 110 });
     },
 
+    // TODO: figure out why this isn't working on the demo doc.
     updateHeight: function(image, pageIndex) {
       var h = this.getPageHeight(pageIndex);
       if (h === image.height) return;
