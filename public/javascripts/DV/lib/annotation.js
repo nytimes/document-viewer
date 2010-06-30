@@ -22,7 +22,7 @@ DV.Annotation = DV.Class.extend({
       this.application.events.resetTracker();
       this.active = null;
       // this.application.elements.window[0].scrollTop += this.annotationEl.offset().top;
-      this.show();      
+      this.show();
       if (argHash.showEdit) this.showEdit();
     }
   },
@@ -57,7 +57,7 @@ DV.Annotation = DV.Class.extend({
     if(!annotation){
       return;
     }
-    
+
     this.page.set.showAnnotation({ index: annotation.index, id: annotation.id, top: annotation.y1 });
   },
 
@@ -74,7 +74,7 @@ DV.Annotation = DV.Class.extend({
   // Show annotation
   show: function(argHash) {
 
-    
+
     if (this.application.activeAnnotation && this.application.activeAnnotation.id != this.id) {
       this.application.activeAnnotation.hide();
     }
@@ -105,6 +105,10 @@ DV.Annotation = DV.Class.extend({
       this.annotationEl.find('div.DV-annotationBG').css({ opacity: 0, display: 'none' });
     }
 
+    if (this.annotationEl.hasClass('DV-editing')) {
+      this.application.helpers.saveAnnotation({target : this.annotationEl}, 'onlyIfText');
+    }
+
     this.annotationEl.removeClass('DV-editing DV-activeAnnotation');
     if(forceOverlayHide === true){
       this.application.elements.window.removeClass('DV-coverVisible');
@@ -123,15 +127,12 @@ DV.Annotation = DV.Class.extend({
     this.application.activeAnnotation     = null;
     this.application.events.trackAnnotation.h         = null;
     this.application.events.trackAnnotation.id        = null;
-    this.application.events.trackAnnotation.combined  = null;    
-    
-    
+    this.application.events.trackAnnotation.combined  = null;
+
+
     this.application.helpers.setActiveAnnotationInNav();
     this.active = false;
     this.pageEl.parent('.DV-set').removeClass('DV-activePage');
-    if (this.model.unsaved) {
-      this.application.models.annotations.removeAnnotation(this.model);
-    }
     // cleanup active state
     this.removeConnector(true);
 
@@ -182,7 +183,7 @@ DV.Annotation = DV.Class.extend({
 
   // Remove the annotation from the page
   remove: function(){
-    
+
     $j('#DV-annotation-'+this.id).remove();
   }
 
