@@ -28,8 +28,7 @@ DV.pageSet = DV.Class.extend({
         this.currentPage = this.pages[page.label];
       }
     }
-
-    this.redraw(true, true);
+    this.application.models.annotations.renderAnnotations();
   },
   // used to generate references for the build action
   getPages: function(){

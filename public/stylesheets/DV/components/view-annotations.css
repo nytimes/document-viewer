@@ -10,10 +10,6 @@
   display:block;
 }
 
-.DV-viewAnnotations #DV-annotations {
-  padding: 0 50px;
-}
-
 .DV-viewAnnotations .DV-annotationRegion{
   filter:none;
   background-color:#000;
@@ -44,7 +40,8 @@
   clear:left;
 }
 
-.DV-viewAnnotations .DV-annotation{
+.DV-viewAnnotations .DV-annotation,
+.DV-getHeights .DV-annotation {
   position:relative;
   top:0 !important;
   display: inline-block;

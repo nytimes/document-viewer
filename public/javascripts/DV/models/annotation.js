@@ -11,7 +11,6 @@
       this.byPage                   = DV.Schema.data.annotationsByPage;
       this.bySortOrder              = this.sortAnnotations();
       this.annotationLeftPageBuffer = 25;
-      this.renderAnnotations();
     },
 
     render: function(annotation){
@@ -152,12 +151,11 @@
       // page annotations.
       for (var i = 0, len = documentModel.totalPages; i < len; i++) {
         if (pageAnnos[i]) {
-          var height = $j(pageAnnos[i].el).outerHeight();
-          if (height >= 20) this.offsetAdjustmentSum += height;
+          var height = ($j(pageAnnos[i].el).height() + 26);
+          this.offsetAdjustmentSum += height;
         }
         this.offsetsAdjustments[i] = this.offsetAdjustmentSum;
       }
-
       annotationsContainer.removeClass('DV-getHeights');
     },
 

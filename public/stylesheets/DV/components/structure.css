@@ -32,6 +32,10 @@ body, html{
   vertical-align:top;
 }
 
+#DV-annotations {
+  padding: 0 60px;
+}
+
 #DV-well{
   width:265px;
   position:absolute;

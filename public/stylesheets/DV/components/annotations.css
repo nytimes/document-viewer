@@ -9,50 +9,50 @@
   .DV-annotation{
     position:absolute;
     left:0;
-    right:0;    
+    right:0;
     padding:4px;
-    -webkit-border-radius: 4px;            
-    -moz-border-radius:  4px;      
-    border-radius:  4px; 
-    margin-left:10px;   
-    margin-right:10px;      
+    -webkit-border-radius: 4px;
+    -moz-border-radius:  4px;
+    border-radius:  4px;
+    margin-left:10px;
+    margin-right:10px;
     -webkit-user-select:none;
-    -moz-user-select:none;    
-    
+    -moz-user-select:none;
+
   }
   .DV-annotationRegion{
     -webkit-user-select:none;
     -moz-user-select:none;
-    
-    background: rgb(236,209,58);   
+
+    background: rgb(236,209,58);
     background: rgba(236,209,58,.3);
-    
-    border:3px solid rgb(236,209,58);      
+
+    border:3px solid rgb(236,209,58);
     border:3px solid rgba(236,209,58,.9);
-    
-    -webkit-border-radius:4px;            
-    -moz-border-radius:4px;      
+
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
     border-radius:4px;
-        
-    position:relative;      
-    
+
+    position:relative;
+
     cursor:pointer;
   }
   .DV-ie .DV-annotationRegion{
-    background: #ecd13a;   
+    background: #ecd13a;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     filter: alpha(opacity=30);
   }
   .DV-annotationRegion:hover{
     -webkit-box-shadow: 0 0 4px rgb(0,0,0);
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.2);
-          
+
     -moz-box-shadow: 0 0 4px rgb(0,0,0);
     -moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
-          
+
     box-shadow: 0 0 4px rgb(0,0,0);
-    box-shadow: 0 0 4px rgba(0,0,0,.2);      
-    border:3px solid rgb(245,200,40);      
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    border:3px solid rgb(245,200,40);
   }
   .DV-ie .DV-annotationRegion:hover{
     border:3px solid orange;
@@ -61,11 +61,11 @@
     display:none;
     background-color:#fff;
     border:1px solid #fff;
-    -webkit-border-radius:4px;            
-    -moz-border-radius:4px;      
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
     border-radius:4px;
     padding:10px;
-    cursor:default;    
+    cursor:default;
   }
   .DV-annotationClose{
     padding:7px 9px 0 10px;
@@ -75,57 +75,57 @@
     line-height:10px;
     font-family:Arial,Helvetica,sans-serif;
     text-indent:-1000em;
-    
+
     background:rgb(236,209,58);
     background:rgba(236,209,58,.9);
-    
-    -webkit-border-radius: 30px 0 0 30px;            
-    -moz-border-radius:  30px 0 0 30px;      
+
+    -webkit-border-radius: 30px 0 0 30px;
+    -moz-border-radius:  30px 0 0 30px;
     border-radius:  30px 0 0 30px;
     width:20px;
     height:19px;
     text-indent:-1000em;
-  }    
-  /* ---------------------------------------------------- annotations - active */    
+  }
+  /* ---------------------------------------------------- annotations - active */
   .DV-activeAnnotation .DV-annotationRegion{
     display:none;
   }
   .DV-activeAnnotation .DV-annotationContent{
-    display:block;      
+    display:block;
   }
   .DV-activeAnnotation .DV-annotationClose{
     text-indent:0;
     display:block;
     background:rgb(223,199,62);
-    background:rgba(223,199,62);    
+    background:rgba(223,199,62);
   }
   .DV-ie .DV-coverVisible .DV-annotationClose{
     background: rgb(223,199,63);
-  }  
+  }
   .DV-ie .DV-activeAnnotation .DV-annotationClose{
     background: rgb(236,209,58);
   }
 
   .DV-activeAnnotation.DV-annotation{
     background: rgb(236,209,58);
-    background: rgba(236,209,58,.9);      
+    background: rgba(236,209,58,.9);
     padding:4px;
-    -webkit-border-radius: 4px;            
-    -moz-border-radius:  4px;      
-    border-radius:  4px; 
-    margin-left:10px;   
-    margin-right:10px;      
-    
+    -webkit-border-radius: 4px;
+    -moz-border-radius:  4px;
+    border-radius:  4px;
+    margin-left:10px;
+    margin-right:10px;
+
     -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
     -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-          
+
     -moz-box-shadow: 1px 1px 3px rgb(0,0,0);
     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-          
-    box-shadow: 1px 1px 3px rgb(0,0,0);              
-    box-shadow: 1px 1px 3px rgba(0,0,0,.2);                    
-    margin-top:-34px; 
-    z-index:10002;    
+
+    box-shadow: 1px 1px 3px rgb(0,0,0);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    margin-top:-34px;
+    z-index:10002;
 
   }
   /* ---------------------------------------------------- annotations - decoration */
@@ -144,7 +144,7 @@
   }
   .DV-annotationTitle{
     float:left;
-    display:inline;      
+    display:inline;
     font-weight:bold;
     font-family:Arial,Helvetica,sans-serif;
     font-size:12px;
@@ -157,19 +157,19 @@
   .DV-annotationExcerpt{
     -moz-box-shadow: inset 0 0 5px rgb(0,0,0);
     -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-          
+
     -webkit-box-shadow: inset 0 0 5px rgb(0,0,0);
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-          
+
     box-shadow: inset 0 0 5px rgb(0,0,0);
-    box-shadow: inset 0 0 5px rgba(0,0,0,.3);      
+    box-shadow: inset 0 0 5px rgba(0,0,0,.3);
     margin: 6px 0 10px;
     border:1px solid #ccc;
-    border:1px solid rgba(180,180,180,.5);    
-    -webkit-border-radius: 2px;            
-    -moz-border-radius:  2px;      
+    border:1px solid rgba(180,180,180,.5);
+    -webkit-border-radius: 2px;
+    -moz-border-radius:  2px;
     border-radius:  2px;
-        
+
     position:relative;
     z-index:10000;
     overflow:hidden;
@@ -179,30 +179,30 @@
 
     -moz-box-shadow: inset 0 0 5px rgb(0,0,0);
     -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-          
+
     -webkit-box-shadow: inset 0 0 5px rgb(0,0,0);
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-          
-    box-shadow: inset 0 0 5px rgb(0,0,0);      
-    box-shadow: inset 0 0 5px rgba(0,0,0,.3);            
-    z-index:10000;  
-    overflow:hidden;      
+
+    box-shadow: inset 0 0 5px rgb(0,0,0);
+    box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+    z-index:10000;
+    overflow:hidden;
   }
   .DV-ie .DV-annotationExcerptImage img{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);      
+    filter: alpha(opacity=20);
   }
 
   .DV-annotationExcerptImageTop{
-    position:absolute;      
+    position:absolute;
     top:2px;
     left:0;
-    z-index:15000;      
-    overflow:hidden;  
-    margin-left:-10px;    
+    z-index:15000;
+    overflow:hidden;
+    margin-left:-10px;
 /*    -moz-box-shadow: inset 0 0 5px rgb(0,0,0);
     -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-*/          
+*/
 /*    -webkit-box-shadow: inset 0 0 5px rgb(0,0,0);*/
 /*    -webkit-box-shadow: inset 0 0 5px #f00;    */
 /*    display:none;*/
@@ -210,32 +210,32 @@
   border-left:1px solid #ddd;
   border-left:1px solid rgba(221,221,221,.4);
   border-right:1px solid #ddd;
-  border-right:1px solid rgba(221,221,221,.4);  
+  border-right:1px solid rgba(221,221,221,.4);
   -webkit-box-shadow: inset 0 0 5px #000;
 
   }
   .DV-annotationExcerptImageTop img{
     margin-left:-17px;
-  }  
+  }
   .DV-annotationExcerptImage img{
-    left:-26px;   
+    left:-26px;
   }
 
   .DV-annotationExcerptImage{
-    left:0; 
-    top:-1px;    
-  } 
+    left:0;
+    top:-1px;
+  }
   .DV-annotationExcerptImage img,
   .DV-annotationExcerptImageTop img{
     -moz-box-shadow: inset 0 0 5px rgb(0,0,0);
     -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-          
+
     -webkit-box-shadow: inset 0 0 5px rgb(0,0,0);
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-          
-    box-shadow: inset 0 0 5px rgb(0,0,0);      
+
+    box-shadow: inset 0 0 5px rgb(0,0,0);
     box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-    position:absolute;      
+    position:absolute;
   }
 
   .DV-annotationBody{
@@ -243,7 +243,7 @@
     font-size:13px;
     line-height:19px;
     padding: 0 2px 5px;
-    cursor:text;    
+    cursor:text;
     -webkit-user-select:text;
     -moz-user-select:text;
   }
@@ -256,22 +256,22 @@
     left:-47px;
     top:8px;
   }
-  
+
   .DV-activeAnnotation .DV-annotationTab{
-    top:42px;      
+    top:42px;
     background-color:rgb(223,199,62);
-    background-color:rgba(223,199,62,1);             
+    background-color:rgba(223,199,62,1);
     background-image:none;
-    width:47px;      
-    -webkit-border-radius: 30px 0 0 30px;            
-    -moz-border-radius:  30px 0 0 30px;      
-    border-radius:  30px 0 0 30px;      
+    width:47px;
+    -webkit-border-radius: 30px 0 0 30px;
+    -moz-border-radius:  30px 0 0 30px;
+    border-radius:  30px 0 0 30px;
   }
-  
+
   .DV-ie .DV-activeAnnotation .DV-annotationTab{
     background:rgb(236,209,58);
   }
-  
+
   /* ---------------------------------------------------- active annotation */
   .DV-activeAnnotation .DV-page{
     background-color:#555;
@@ -281,7 +281,7 @@
   }
   .DV-ie .DV-activeAnnotation .DV-pageImage{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);      
+    filter: alpha(opacity=50);
   }
 
 /* ---------------------------------------------------- pagination */
@@ -310,7 +310,7 @@
   text-decoration:underline;
 }
 
-.DV-resultPrevious, 
+.DV-resultPrevious,
 .DV-annotationPrevious {
   background: url(../../../images/DV/embed/leftArrow.gif) no-repeat left 1px;
 }
@@ -326,13 +326,13 @@
 .DV-lastAnnotation .DV-annotationNext{
   display:none;
 }
- 
+
 
 .DV-annotationPrevious:hover{
   text-decoration:underline;
 }
 
-.DV-resultNext, 
+.DV-resultNext,
 .DV-annotationNext {
   background:transparent url(../../../images/DV/embed/rightArrow.gif) no-repeat right 1px;
 }
@@ -359,26 +359,26 @@
   top:0;
   cursor: default !important;
   margin-bottom:20px;
-  
+
   background: rgb(236,209,58);
   background: rgba(236,209,58,.9);
-  
-  -webkit-border-radius:4px;            
-  -moz-border-radius:4px;      
-  border-radius:4px;  
-  
+
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+
   -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
   -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-        
+
   -moz-box-shadow: 1px 1px 3px rgb(0,0,0);
   -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-        
-  box-shadow: 1px 1px 3px rgb(0,0,0);              
-  box-shadow: 1px 1px 3px rgba(0,0,0,.2);                    
-  
+
+  box-shadow: 1px 1px 3px rgb(0,0,0);
+  box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+
 }
 .DV-activeAnnotation.DV-pageNote{
-  margin-top:0;   
+  margin-top:0;
 }
 .DV-pageNote .DV-annotationContent{
   display:block;
@@ -396,18 +396,5 @@
 
 /* ---------------------------------------------------- hack for load */
 .DV-getHeights{
-  position:absolute !important;
-  left:-1000em !important;
-  top:-1000em !important;
   display:block !important;
-}
-
-.DV-getHeights .DV-annotation{
-  height: 0 !important;
-}
-
-.DV-getHeights .DV-pageNote{
-  height: auto !important;
-  padding-bottom:30px;
-  padding-top:36px;  
 }
