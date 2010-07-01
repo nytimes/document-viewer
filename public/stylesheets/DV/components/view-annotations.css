@@ -48,8 +48,8 @@
   display: inline-block;
   margin: 0 auto 25px;
 
-  background: rgb(236,209,58);
-  background: rgba(236,209,58,.9);
+  background: rgb(255, 227, 37);
+  background: rgba(255, 227, 37, .9);
 
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
