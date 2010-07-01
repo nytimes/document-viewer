@@ -11,15 +11,15 @@
 }
 
 .DV-viewAnnotations .DV-annotationRegion{
-  filter:none;
-  background-color:#000;
-  display:none !important;
+  position: absolute;
+  left: -10000px;
+  width: 0; height: 0;
 }
 
 .DV-viewAnnotations .DV-annotationTab{
 
-  filter:none;  
-  display:none !important;  
+  filter:none;
+  display:none !important;
 }
 
 .DV-viewAnnotations .DV-annotationGoto{
@@ -47,23 +47,23 @@
   top:0 !important;
   display: inline-block;
   margin: 0 auto 25px;
-  
+
   background: rgb(236,209,58);
   background: rgba(236,209,58,.9);
-  
-  -webkit-border-radius:4px;            
-  -moz-border-radius:4px;      
-  border-radius:4px;  
-  
+
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+
   -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
   -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-        
+
   -moz-box-shadow: 1px 1px 3px rgb(0,0,0);
   -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-        
-  box-shadow: 1px 1px 3px rgb(0,0,0);              
-  box-shadow: 1px 1px 3px rgba(0,0,0,.2);  
-  
+
+  box-shadow: 1px 1px 3px rgb(0,0,0);
+  box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+
 }
 
 /*hack to control scrollbar width in webkit*/
