@@ -17,7 +17,7 @@
       <div class="DV-annotationGoto"><div class="DV-trigger">Go to Page <%= pageNumber %></div></div>
       <div class="DV-annotationTitle DV-editHidden"><%= title %></div>
       <input class="DV-annotationTitleInput DV-editVisible" type="text" placeholder="Annotation Title" value="<%= title %>" />
-      <span class="DV-textLink DV-showEdit DV-editHidden <%= access == 'public' ? 'DV-ownerVisible' : 'DV-contributorVisible' %>">edit</span>
+      <div class="DV-showEdit DV-editHidden <%= access == 'public' ? 'DV-ownerVisible' : 'DV-contributorVisible' %>"></div>
     </div>
 
 

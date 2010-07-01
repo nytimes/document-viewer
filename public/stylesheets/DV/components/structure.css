@@ -61,7 +61,6 @@ body, html{
 #DV-pageCollection{
   margin: 20px auto;
   position:relative;
-  padding-bottom:20px;
   z-index:0;
 }
 

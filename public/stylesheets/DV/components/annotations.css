@@ -10,10 +10,10 @@
     position:absolute;
     left:0;
     right:0;
-    padding:4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius:  4px;
-    border-radius:  4px;
+    padding:3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:  3px;
+    border-radius:  3px;
     margin-left:10px;
     margin-right:10px;
     -webkit-user-select:none;
@@ -24,19 +24,25 @@
     -webkit-user-select:none;
     -moz-user-select:none;
 
-    background: rgb(236,209,58);
-    background: rgba(236,209,58,.3);
+    background: rgb(255, 227, 37);
+    background: rgba(255, 227, 37, 0.2);
 
-    border:3px solid rgb(236,209,58);
-    border:3px solid rgba(236,209,58,.9);
+    border:3px solid rgb(255, 227, 37);
+    border:3px solid rgba(255, 227, 37, 0.5);
 
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
 
     position:relative;
 
     cursor:pointer;
+  }
+  .DV-coverVisible .DV-annotationRegion {
+    background: rgb(255, 227, 37);
+    background: rgba(255, 227, 37, 0.1);
+    border:3px solid rgb(255, 227, 37);
+    border:3px solid rgba(255, 227, 37, 0.2);
   }
   .DV-ie .DV-annotationRegion{
     background: #ecd13a;
@@ -44,15 +50,15 @@
     filter: alpha(opacity=30);
   }
   .DV-annotationRegion:hover{
-    -webkit-box-shadow: 0 0 4px rgb(0,0,0);
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.2);
+    -webkit-box-shadow: 1px 2px 7px rgb(0,0,0);
+    -webkit-box-shadow: 1px 2px 7px rgba(0,0,0,.2);
 
-    -moz-box-shadow: 0 0 4px rgb(0,0,0);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 1px 2px 7px rgb(0,0,0);
+    -moz-box-shadow: 1px 2px 7px rgba(0,0,0,.2);
 
-    box-shadow: 0 0 4px rgb(0,0,0);
-    box-shadow: 0 0 4px rgba(0,0,0,.2);
-    border:3px solid rgb(245,200,40);
+    box-shadow: 1px 2px 7px rgb(0,0,0);
+    box-shadow: 1px 2px 7px rgba(0,0,0,.2);
+    border: 3px solid rgb(255, 227, 37);
   }
   .DV-ie .DV-annotationRegion:hover{
     border:3px solid orange;
@@ -61,9 +67,9 @@
     display:none;
     background-color:#fff;
     border:1px solid #fff;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
     padding:10px;
     cursor:default;
   }
@@ -76,8 +82,8 @@
     font-family:Arial,Helvetica,sans-serif;
     text-indent:-1000em;
 
-    background:rgb(236,209,58);
-    background:rgba(236,209,58,.9);
+    background:rgb(255, 227, 37);
+    background:rgba(255, 227, 37, 0.9);
 
     -webkit-border-radius: 30px 0 0 30px;
     -moz-border-radius:  30px 0 0 30px;
@@ -96,25 +102,25 @@
   .DV-activeAnnotation .DV-annotationClose{
     text-indent:0;
     display:block;
-    background:rgb(223,199,62);
-    background:rgba(223,199,62);
+/*    background:rgb(223,199,62);*/
+/*    background:rgba(223,199,62);*/
   }
   .DV-ie .DV-coverVisible .DV-annotationClose{
     background: rgb(223,199,63);
   }
   .DV-ie .DV-activeAnnotation .DV-annotationClose{
-    background: rgb(236,209,58);
+    background: rgb(255, 227, 37);
   }
 
   .DV-activeAnnotation.DV-annotation{
-    background: rgb(236,209,58);
-    background: rgba(236,209,58,.9);
-    padding:4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius:  4px;
-    border-radius:  4px;
-    margin-left:10px;
-    margin-right:10px;
+    background: rgb(255, 227, 37);
+    background: rgba(255, 227, 37, 1);
+    padding:3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:  3px;
+    border-radius:  3px;
+    margin: -33px 10px 0 11px;
+    z-index:10002;
 
     -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
     -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
@@ -124,10 +130,8 @@
 
     box-shadow: 1px 1px 3px rgb(0,0,0);
     box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-    margin-top:-34px;
-    z-index:10002;
-
   }
+
   /* ---------------------------------------------------- annotations - decoration */
   .DV-annotationGoto{
     float:right;
@@ -150,7 +154,7 @@
     font-size:12px;
     color:#000;
     width:70%;
-    padding:0 0 4px;
+    padding:0;
   }
 
   /* ---------------------------------------------------- excerpt */
@@ -163,9 +167,8 @@
 
     box-shadow: inset 0 0 5px rgb(0,0,0);
     box-shadow: inset 0 0 5px rgba(0,0,0,.3);
-    margin: 6px 0 10px;
-    border:1px solid #ccc;
-    border:1px solid rgba(180,180,180,.5);
+    margin: 10px 0 10px;
+    border:1px solid #d0d0d0;
     -webkit-border-radius: 2px;
     -moz-border-radius:  2px;
     border-radius:  2px;
@@ -239,13 +242,11 @@
   }
 
   .DV-annotationBody{
-    font-family:Georgia,Times,serif;
-    font-size:13px;
-    line-height:19px;
-    padding: 0 2px 5px;
+    font: 13px/18px Georgia, Times, serif;
     cursor:text;
     -webkit-user-select:text;
     -moz-user-select:text;
+    color: #333;
   }
   /* ---------------------------------------------------- tabs */
   .DV-annotationTab{
@@ -259,8 +260,8 @@
 
   .DV-activeAnnotation .DV-annotationTab{
     top:42px;
-    background-color:rgb(223,199,62);
-    background-color:rgba(223,199,62,1);
+    background-color:rgb(255, 227, 37);
+    background-color:rgba(255, 227, 37, 1);
     background-image:none;
     width:47px;
     -webkit-border-radius: 30px 0 0 30px;
@@ -269,7 +270,7 @@
   }
 
   .DV-ie .DV-activeAnnotation .DV-annotationTab{
-    background:rgb(236,209,58);
+    background:rgb(255, 227, 37);
   }
 
   /* ---------------------------------------------------- active annotation */
@@ -287,7 +288,6 @@
 /* ---------------------------------------------------- pagination */
 
 .DV-pagination{
-  margin: -3px 0 0;
   text-align:center;
   float:right;
   display:inline;
@@ -295,6 +295,7 @@
   text-decoration:uppercase;
   background-color:#fff;
   font-family:Arial,Helvetica,sans-serif;
+  line-height: 9px;
 }
 
 .DV-pagination .DV-trigger
@@ -360,12 +361,12 @@
   cursor: default !important;
   margin-bottom:20px;
 
-  background: rgb(236,209,58);
-  background: rgba(236,209,58,.9);
+  background: rgb(255, 227, 37);
+  background: rgba(255, 227, 37, 0.9);
 
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
 
   -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
   -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
