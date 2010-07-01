@@ -124,11 +124,9 @@
 
     // Offsets all document pages based on interleaved page annotations.
     updateAnnotationOffsets: function(){
-      this.offsetsAdjustments = [];
-      // console.time('updateAnnotationOffsets')
+      this.offsetsAdjustments   = [];
+      this.offsetAdjustmentSum  = 0;
       var documentModel         = this.application.models.document;
-      // asking for all, but css class .DV-getHeights sets the height to 0 for all annotations besides pageNotes
-      // Why do this? To avoid making that loop any more exspensive than it already is
       var annotationsContainer  = $j('div#DV-annotations');
       var pageAnnotationEls     = annotationsContainer.find('.DV-pageNote');
       var me = this;

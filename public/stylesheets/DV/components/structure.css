@@ -4,7 +4,7 @@ body, html{
 };
 
 #DV-docViewer{
-  position:relative;
+/*  position: relative;*/
   text-align: left;
   line-height: normal;
 }
@@ -13,9 +13,8 @@ body, html{
   position:absolute;
   bottom: 0px; top: 40px; left: 0px; right: 0px;
   margin: 0;
-  overflow:hidden;
-  border-top:1px solid #ababab;
-  border-bottom:1px solid #ababab;
+  overflow: hidden;
+  border: 1px solid #ababab; border-left: 0; border-right: 0;
 }
 
 #DV-bar{
