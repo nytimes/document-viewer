@@ -453,11 +453,11 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale', 
 }
 
 .DV-getHeights .DV-annotation{
-  height:0 !important;
+  height: 0 !important;
 }
 
 .DV-getHeights .DV-pageNote{
-  height:auto !important;
+  height: auto !important;
 }
 
 .DV-excerptLowLevel{

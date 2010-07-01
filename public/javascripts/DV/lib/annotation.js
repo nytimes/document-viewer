@@ -5,6 +5,7 @@ DV.Annotation = DV.Class.extend({
     this.dimensions   = { width: argHash.width, height: argHash.height };
     this.page         = argHash.page;
     this.pageEl       = argHash.pageEl;
+    this.annotationContainerEl = argHash.annotationContainerEl;    
     this.application  = this.page.set.application;
     this.annotationEl = null;
     this.renderedHTML = argHash.renderedHTML;
@@ -29,7 +30,7 @@ DV.Annotation = DV.Class.extend({
   // Add annotation to page
   add: function(){
     if(this.type === 'page'){
-      this.annotationEl = this.renderedHTML.insertBefore(this.pageEl);
+      this.annotationEl = this.renderedHTML.insertBefore(this.annotationContainerEl);
     }else{
       if(this.page.annotations.length > 0){
         for(var i = 0,len = this.page.annotations.length;i<len;i++){
@@ -37,11 +38,13 @@ DV.Annotation = DV.Class.extend({
 
             return false;
           }else{
-            this.annotationEl = this.renderedHTML.appendTo(this.pageEl);
+
+            this.annotationEl = this.renderedHTML.appendTo(this.annotationContainerEl);
           }
         }
       }else{
-        this.annotationEl = this.renderedHTML.appendTo(this.pageEl);
+
+        this.annotationEl = this.renderedHTML.appendTo(this.annotationContainerEl);
       }
     }
   },

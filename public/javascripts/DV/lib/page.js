@@ -11,6 +11,7 @@ DV.page = DV.Class.extend({
     this.pageImageEl      = this.getPageImage();
 
     this.pageEl           = this.el.find('div.DV-page');
+    this.annotationContainerEl = this.el.find('div.DV-annotations');
     this.coverEl          = this.el.find('div.DV-cover');
     this.application      = this.set.application;
     this.loadTimer        = null;
@@ -142,6 +143,7 @@ DV.page = DV.Class.extend({
             id:           anno.id,
             page:         this,
             pageEl:       this.pageEl,
+            annotationContainerEl : this.annotationContainerEl,
             pageNumber:   this.pageNumber,
             state:        'collapsed',
             top:          anno.y1,
