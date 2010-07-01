@@ -398,3 +398,27 @@
 .DV-getHeights{
   display:block !important;
 }
+
+/*------------------------ show/hide the edit UI ---------------------------------*/
+.DV-annotation .DV-editVisible {
+  display: none;
+}
+
+.DV-editing .DV-editVisible {
+  display: block;
+}
+
+.DV-editing .DV-editHidden {
+  display: none !important;
+}
+
+.DV-annotation .DV-contributorVisible,
+.DV-annotation .DV-ownerVisible {
+  display: none;
+}
+
+.DV-isContributor .DV-annotation .DV-contributorVisible,
+.DV-isOwner .DV-annotation .DV-contributorVisible,
+.DV-isOwner .DV-annotation .DV-ownerVisible {
+  display: block;
+}
