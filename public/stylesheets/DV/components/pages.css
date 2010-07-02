@@ -84,13 +84,6 @@
   -moz-user-select:none;
 }
 
-/*This is no longer valuable because images are now cached via executeCommand in controller... odd...*/
-/*.DV-ie .DV-interpolate .DV-pageImage,
-.DV-ie .DV-interpolate .DV-annotationExcerptImage,
-.DV-ie .DV-interpolate .DV-excerptHighLevel img{
-  -ms-interpolation-mode: bicubic;
-}*/
-
 .DV-pageImage,
 .DV-annotationExcerptImage,
 .DV-excerptHighLevel img{

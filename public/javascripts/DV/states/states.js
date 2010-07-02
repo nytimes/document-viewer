@@ -42,6 +42,7 @@ DV.Schema.states = {
       this.helpers.bindEvents(this);
     },
     InitialLoad: function(){
+      this.helpers.positionViewer();
       this.models.document.computeOffsets();
       this.helpers.addObserver('drawPages');
       this.helpers.registerHashChangeEvents();

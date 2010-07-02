@@ -272,6 +272,14 @@ DV.Schema.helpers = {
       return pages.join('');
 
     },
+
+    // Position the viewer on the page. For a full screen viewer, this means
+    // absolute from the current y offset to the bottom of the viewport.
+    positionViewer : function() {
+      var offset = this.elements.viewer.offset();
+      this.elements.viewer.css({position: 'absolute', top: offset.top, bottom: 0, left: offset.left, right: offset.left});
+    },
+
     loadAssets: function(assets){
       for(var i = 0,len = assets.length; i<len; i++){
         this.loadAsset(assets[i]);
@@ -280,14 +288,6 @@ DV.Schema.helpers = {
     loadAsset: function(asset){
       $j('head').append(asset);
     },
-    setInterpolationMode: function(toggleBoolean){
-      if(toggleBoolean == true){
-        this.elements.window.addClass('DV-interpolate');
-      }else{
-        this.elements.window.removeClass('DV-interpolate');
-      }
-    },
-
 
     registerHashChangeEvents: function(){
       var events  = this.events;

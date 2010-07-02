@@ -4,14 +4,6 @@ DV.Schema.events = {
   zoom: function(zoomLevel){
     this.application.pageSet.zoom({ zoomLevel: zoomLevel });
 
-    // Disabled now because controller modifications that remove IE bg flicker seem to cache and fail to apply
-    // This bicubic option. Very odd
-    // if(ranges[0] == zoomLevel || ranges[ranges.length-1] == zoomLevel){
-    //   this.helpers.setInterpolationMode(false);
-    // }else{
-    //   this.helpers.setInterpolationMode(true);
-    // }
-
     // Adjust the drag sensativity for largest zoom level
     var ranges = this.application.models.document.ZOOM_RANGES;
     if(ranges[ranges.length-1] == zoomLevel){

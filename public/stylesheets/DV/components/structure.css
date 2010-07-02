@@ -1,10 +1,10 @@
 /* Only global rule. Hide overflow. */
 body, html{
   overflow: hidden;
-};
+}
 
 #DV-docViewer{
-/*  position: relative;*/
+  position: relative;
   text-align: left;
   line-height: normal;
 }
