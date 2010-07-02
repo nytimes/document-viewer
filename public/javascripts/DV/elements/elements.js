@@ -1,5 +1,5 @@
 // We cache DOM references to improve speed and reduce DOM queries
-DV.Schema.elements = 
+DV.Schema.elements =
 [
   { name: 'browserDocument',    query: document },
   { name: 'browserWindow',      query: window },
@@ -13,6 +13,7 @@ DV.Schema.elements =
   { name: 'currentPage',        query: 'span#DV-currentPage'},
   { name: 'well',               query: 'div#DV-well'},
   { name: 'collection',         query: 'div#DV-pageCollection'},
+  { name: 'annotations',        query: 'div#DV-annotations'},
   { name: 'navigation',         query: 'div#DV-well div.DV-navigation' },
   { name: 'chaptersContainer',  query: 'div#DV-well div.DV-chaptersContainer' },
   { name: 'searchInput',        query: 'input#DV-searchInput' },
