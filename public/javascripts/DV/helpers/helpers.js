@@ -54,18 +54,10 @@ DV.Schema.helpers = {
       $j('.DV-trigger').bind('selectstart', function(){ return false; });
 
       var boundToggle           = $j.proxy(this.annotationBridgeToggle, this);
-      var boundDrawConnector    = $j.proxy(this.annotationBridgeDrawConnector,this);
-      var boundRemoveConnector  = $j.proxy(this.annotationBridgeRemoveConnector,this);
       var collection            = this.elements.collection;
 
       collection.delegate('.DV-annotationTab','click', boundToggle);
-      collection.delegate('.DV-annotationTab','mouseover', boundDrawConnector);
-      collection.delegate('.DV-annotationTab','mouseout', boundRemoveConnector);
-
-      collection.delegate('.DV-annotationRegion','mouseover', boundDrawConnector);
-      collection.delegate('.DV-annotationRegion','mouseout', boundRemoveConnector);
       collection.delegate('.DV-annotationRegion','click', $j.proxy(this.annotationBridgeShow, this));
-
       collection.delegate('.DV-annotationNext','click', $j.proxy(this.annotationBridgeNext, this));
       collection.delegate('.DV-annotationPrevious','click', $j.proxy(this.annotationBridgePrevious, this));
       collection.delegate('.DV-showEdit','click', $j.proxy(this.showAnnotationEdit, this));

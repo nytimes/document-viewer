@@ -41,11 +41,10 @@
     <textarea class="DV-annotationTextArea DV-editVisible" style="width: <%= bWidth %>px;"><%= text %></textarea>
 
     <div class="DV-annotationEditControls DV-editVisible">
-      <div class="<%= access == 'public' ? 'DV-ownerVisible' : 'DV-contributorVisible' %>">
+      <div class="<%= access == 'public' ? 'DV-ownerVisible' : 'DV-contributorVisible' %> clearfix">
         <div class="minibutton warn DV-deleteAnnotation float_left">Delete</div>
         <div class="minibutton default DV-saveAnnotation float_right">Save</div>
         <div class="minibutton DV-cancelEdit float_right">Cancel</div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>

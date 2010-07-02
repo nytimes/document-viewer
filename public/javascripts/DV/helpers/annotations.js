@@ -28,18 +28,6 @@ _.extend(DV.Schema.helpers, {
     var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
     annotationObject.toggle();
   },
-  // Draw active state
-  annotationBridgeDrawConnector: function(e){
-    e.preventDefault();
-    var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
-    annotationObject.drawConnector();
-  },
-  // Remove active state
-  annotationBridgeRemoveConnector: function(e){
-    e.preventDefault();
-    var annotationObject = this.getAnnotationObject($j(e.target).closest(this.annotationClassName));
-    annotationObject.removeConnector();
-  },
   // Show annotation
   annotationBridgeShow: function(e){
     e.preventDefault();

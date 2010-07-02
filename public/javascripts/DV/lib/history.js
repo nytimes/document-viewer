@@ -46,7 +46,7 @@ DV.history = {
   // for it. You're responsible for pre-escaping the URL fragment.
   save : function(hash) {
     window.location.hash = this.hash = (hash ? '#' + hash : '');
-    if (this.USE_IFRAME && (this.hash != this.iframe.location.hash)) {
+    if (this.USE_IFRAME && (this.iframe && (this.hash != this.iframe.location.hash))) {
       this.iframe.document.open().close();
       this.iframe.location.hash = this.hash;
     }
