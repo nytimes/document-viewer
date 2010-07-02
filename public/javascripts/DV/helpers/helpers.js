@@ -37,7 +37,7 @@ DV.Schema.helpers = {
         DV.history.save('text/p'+context.models.document.currentPage());
         states.ViewText();
       });
-      $j('.DV-annotationGoto').delegate('.DV-trigger','click', $j.proxy(this.gotoPage, this));
+      $j('#DV-annotations').delegate('.DV-annotationGoto .DV-trigger','click', $j.proxy(this.gotoPage, this));
 
       $j('form#DV-searchDocument').submit(this.events.compile('search'));
       $j('#DV-searchBar').delegate('#DV-closeSearch','click',function(e){
