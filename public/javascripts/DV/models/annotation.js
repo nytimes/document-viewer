@@ -106,9 +106,9 @@
     refreshAnnotation : function(anno) {
       $j('#DV-annotation-' + anno.id + ', #DV-listAnnotation-' + anno.id).each(function() {
         $j('.DV-annotationTitleInput', this).val(anno.title);
-        $j('.DV-annotationLabel', this).html(anno.title);
+        $j('.DV-annotationTitle', this).text(anno.title);
         $j('.DV-annotationTextArea', this).val(anno.text);
-        $j('.DV-annotationText', this).html(anno.text);
+        $j('.DV-annotationBody', this).html(anno.text);
       });
     },
 

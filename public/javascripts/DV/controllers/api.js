@@ -77,7 +77,7 @@ DV.api = {
     DV.controller.helpers.renderComponents();
     if (redrawAll) {
       DV.controller.elements.window.removeClass('DV-coverVisible');
-      DV.controller.pageSet.buildPages();
+      DV.controller.pageSet.buildPages({noNotes : true});
     }
   },
 

@@ -5,7 +5,7 @@ DV.Annotation = DV.Class.extend({
     this.dimensions   = { width: argHash.width, height: argHash.height };
     this.page         = argHash.page;
     this.pageEl       = argHash.pageEl;
-    this.annotationContainerEl = argHash.annotationContainerEl;    
+    this.annotationContainerEl = argHash.annotationContainerEl;
     this.application  = this.page.set.application;
     this.annotationEl = null;
     this.renderedHTML = argHash.renderedHTML;
@@ -14,7 +14,7 @@ DV.Annotation = DV.Class.extend({
     this.model        = this.application.models.annotations.getAnnotation(this.id);
     this.state        = 'collapsed';
     this.active       = false;
-    // this.remove();
+    this.remove();
     this.add();
 
     if(argHash.active){

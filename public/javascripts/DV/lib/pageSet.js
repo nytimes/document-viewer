@@ -14,7 +14,8 @@ DV.pageSet = DV.Class.extend({
     });
   },
   // build the basic page presentation layer
-  buildPages: function(){
+  buildPages: function(options) {
+    options = options || {};
     var pages = this.getPages();
     for(var i = 0; i < pages.length; i++) {
       var page  = pages[i];
@@ -166,15 +167,15 @@ DV.pageSet = DV.Class.extend({
 
 
       for(var i = 0; i <= 2; i++){
-        for(var n = 0; n < this.pages['p'+i].annotations.length; n++){
-          if(this.pages['p'+i].annotations[n].id === argHash.id){
-            if (!showHash.noJump) {
-              this.application.helpers.jump(argHash.index, offset);
+        if (this.pages['p' + i]) {
+          for(var n = 0; n < this.pages['p'+i].annotations.length; n++){
+            if(this.pages['p'+i].annotations[n].id === argHash.id){
+              if (!showHash.noJump) {
+                this.application.helpers.jump(argHash.index, offset);
+              }
+              this.pages['p'+i].annotations[n].show(showHash);
+              return;
             }
-
-            this.pages['p'+i].annotations[n].show(showHash);
-
-            return;
           }
         }
       }

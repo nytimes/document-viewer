@@ -63,7 +63,10 @@
 
   box-shadow: 1px 1px 3px rgb(0,0,0);
   box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-
+}
+.DV-viewAnnotations .DV-annotation.DV-private {
+  background: rgb(107, 194, 248);
+  background: rgba(107, 194, 248, .9);
 }
 
 /*hack to control scrollbar width in webkit*/

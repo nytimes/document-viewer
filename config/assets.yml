@@ -1,4 +1,6 @@
+# TODO: re-enable asset compression before the next tagged release.
 # package_assets: always
+compress_assets: off
 embed_images: datauri
 template_function: _.template
 
@@ -19,11 +21,11 @@ javascripts:
     - public/javascripts/DV/models/*.js
     - public/javascripts/DV/events/events.js
     - public/javascripts/DV/events/View*.js
-    - public/javascripts/DV/events/*.js    
+    - public/javascripts/DV/events/*.js
     - public/javascripts/DV/helpers/helpers.js
-    - public/javascripts/DV/helpers/*.js    
+    - public/javascripts/DV/helpers/*.js
     - public/javascripts/DV/states/states.js
-    - public/javascripts/DV/states/*.js    
+    - public/javascripts/DV/states/*.js
     - public/javascripts/DV/controllers/documentViewer.js
     - public/javascripts/DV/controllers/*.js
 

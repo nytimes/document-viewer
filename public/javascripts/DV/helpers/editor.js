@@ -18,6 +18,7 @@ _.extend(DV.Schema.helpers,{
   saveAnnotation : function(e, option) {
     var annoEl = $j(e.target).closest(this.annotationClassName);
     var anno   = this.getAnnotationModel(annoEl);
+    if (!anno) return;
     anno.title = $j('.DV-annotationTitleInput', annoEl).val();
     anno.text  = $j('.DV-annotationTextArea', annoEl).val();
     if (option == 'onlyIfText' && (!anno.title || anno.title == 'Untitled Note') && !anno.text) {

@@ -20,7 +20,7 @@
     -moz-user-select:none;
 
   }
-  .DV-annotationRegion{
+  .DV-annotationRegion {
     -webkit-user-select:none;
     -moz-user-select:none;
 
@@ -38,11 +38,23 @@
 
     cursor:pointer;
   }
+  .DV-private .DV-annotationRegion {
+    background: rgb(107, 194, 248);
+    background: rgba(107, 194, 248, 0.2);
+    border:3px solid rgb(107, 194, 248);
+    border:3px solid rgba(107, 194, 248, 0.5);
+  }
   .DV-coverVisible .DV-annotationRegion {
     background: rgb(255, 227, 37);
     background: rgba(255, 227, 37, 0.1);
     border:3px solid rgb(255, 227, 37);
     border:3px solid rgba(255, 227, 37, 0.2);
+  }
+  .DV-coverVisible .DV-private .DV-annotationRegion {
+    background: rgb(107, 194, 248);
+    background: rgba(107, 194, 248, 0.1);
+    border:3px solid rgb(107, 194, 248);
+    border:3px solid rgba(107, 194, 248, 0.2);
   }
   .DV-ie .DV-annotationRegion{
     background: #ecd13a;
@@ -59,6 +71,9 @@
     box-shadow: 1px 2px 7px rgb(0,0,0);
     box-shadow: 1px 2px 7px rgba(0,0,0,.2);
     border: 3px solid rgb(255, 227, 37);
+  }
+  .DV-private .DV-annotationRegion:hover {
+    border: 3px solid rgb(107, 194, 248);
   }
   .DV-ie .DV-annotationRegion:hover{
     border:3px solid orange;
@@ -92,6 +107,10 @@
     height:19px;
     text-indent:-1000em;
   }
+  .DV-private .DV-annotationClose {
+    background: rgb(107, 194, 248);
+    background: rgba(107, 194, 248, 0.9);
+  }
   /* ---------------------------------------------------- annotations - active */
   .DV-activeAnnotation .DV-annotationRegion{
     display:none;
@@ -111,10 +130,15 @@
   .DV-ie .DV-activeAnnotation .DV-annotationClose{
     background: rgb(255, 227, 37);
   }
+  .DV-ie .DV-coverVisible .DV-private .DV-annotationClose{
+    background: rgb(107, 194, 248);
+  }
+  .DV-ie .DV-activeAnnotation.DV-private .DV-annotationClose{
+    background: rgb(107, 194, 248);
+  }
 
   .DV-activeAnnotation.DV-annotation{
     background: rgb(255, 227, 37);
-    background: rgba(255, 227, 37, 1);
     padding:3px;
     -webkit-border-radius: 3px;
     -moz-border-radius:  3px;
@@ -130,6 +154,9 @@
 
     box-shadow: 1px 1px 3px rgb(0,0,0);
     box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+  }
+  .DV-activeAnnotation.DV-annotation.DV-private {
+    background: rgb(107, 194, 248);
   }
 
   /* ---------------------------------------------------- annotations - decoration */
@@ -256,20 +283,21 @@
     left:-47px;
     top:8px;
   }
+    .DV-private .DV-annotationTab {
+      background-image: url(../../../images/DV/embed/corner-private.png);
+    }
 
   .DV-activeAnnotation .DV-annotationTab{
     top:42px;
     background-color:rgb(255, 227, 37);
-    background-color:rgba(255, 227, 37, 1);
     background-image:none;
     width:47px;
     -webkit-border-radius: 30px 0 0 30px;
     -moz-border-radius:  30px 0 0 30px;
     border-radius:  30px 0 0 30px;
   }
-
-  .DV-ie .DV-activeAnnotation .DV-annotationTab{
-    background:rgb(255, 227, 37);
+  .DV-activeAnnotation.DV-private .DV-annotationTab {
+    background-color: rgb(107, 194, 248);
   }
 
   /* ---------------------------------------------------- active annotation */
@@ -375,7 +403,10 @@
 
   box-shadow: 1px 1px 3px rgb(0,0,0);
   box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-
+}
+.DV-pageNote.DV-private {
+  background: rgb(107, 194, 248);
+  background: rgba(107, 194, 248, 0.9);
 }
 .DV-activeAnnotation.DV-pageNote{
   margin-top:0;
