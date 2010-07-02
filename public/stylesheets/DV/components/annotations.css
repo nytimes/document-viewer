@@ -38,17 +38,21 @@
 
     cursor:pointer;
   }
-  .DV-private .DV-annotationRegion, .DV-private.DV-annotationRegion {
-    background: rgb(107, 194, 248);
-    background: rgba(107, 194, 248, 0.2);
-    border:3px solid rgb(107, 194, 248);
-    border:3px solid rgba(107, 194, 248, 0.5);
-  }
   .DV-coverVisible .DV-annotationRegion {
     background: rgb(255, 227, 37);
     background: rgba(255, 227, 37, 0.1);
     border:3px solid rgb(255, 227, 37);
     border:3px solid rgba(255, 227, 37, 0.2);
+  }
+  .DV-ie .DV-annotationRegion{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+  }
+  .DV-private .DV-annotationRegion, .DV-private.DV-annotationRegion {
+    background: rgb(107, 194, 248);
+    background: rgba(107, 194, 248, 0.2);
+    border:3px solid rgb(107, 194, 248);
+    border:3px solid rgba(107, 194, 248, 0.5);
   }
   .DV-coverVisible .DV-private .DV-annotationRegion {
     background: rgb(107, 194, 248);
@@ -56,12 +60,8 @@
     border:3px solid rgb(107, 194, 248);
     border:3px solid rgba(107, 194, 248, 0.2);
   }
-  .DV-ie .DV-annotationRegion{
-    background: #ecd13a;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-  }
   .DV-annotationRegion:hover{
+    border: 3px solid rgb(255, 227, 37);
     -webkit-box-shadow: 1px 2px 7px rgb(0,0,0);
     -webkit-box-shadow: 1px 2px 7px rgba(0,0,0,.2);
 
@@ -70,13 +70,9 @@
 
     box-shadow: 1px 2px 7px rgb(0,0,0);
     box-shadow: 1px 2px 7px rgba(0,0,0,.2);
-    border: 3px solid rgb(255, 227, 37);
   }
   .DV-private .DV-annotationRegion:hover {
     border: 3px solid rgb(107, 194, 248);
-  }
-  .DV-ie .DV-annotationRegion:hover{
-    border:3px solid orange;
   }
   .DV-annotationContent{
     display:none;
@@ -124,18 +120,6 @@
 /*    background:rgb(223,199,62);*/
 /*    background:rgba(223,199,62);*/
   }
-  .DV-ie .DV-coverVisible .DV-annotationClose{
-    background: rgb(223,199,63);
-  }
-  .DV-ie .DV-activeAnnotation .DV-annotationClose{
-    background: rgb(255, 227, 37);
-  }
-  .DV-ie .DV-coverVisible .DV-private .DV-annotationClose{
-    background: rgb(107, 194, 248);
-  }
-  .DV-ie .DV-activeAnnotation.DV-private .DV-annotationClose{
-    background: rgb(107, 194, 248);
-  }
 
   .DV-activeAnnotation.DV-annotation{
     background: rgb(255, 227, 37);
@@ -143,7 +127,7 @@
     -webkit-border-radius: 3px;
     -moz-border-radius:  3px;
     border-radius:  3px;
-    margin: -33px 10px 0 11px;
+    margin: -37px 10px 0 11px;
     z-index:10002;
 
     -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
@@ -322,7 +306,6 @@
   text-decoration:uppercase;
   background-color:#fff;
   font-family:Arial,Helvetica,sans-serif;
-  line-height: 9px;
 }
 
 .DV-pagination .DV-trigger
@@ -332,6 +315,8 @@
   text-decoration:none;
   text-transform:uppercase;
   font-size:10px;
+  position: relative;
+  top: -3px;
 }
 
 .DV-annotation .DV-trigger:hover{
