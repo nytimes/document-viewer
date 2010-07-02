@@ -38,7 +38,7 @@
 
     cursor:pointer;
   }
-  .DV-private .DV-annotationRegion {
+  .DV-private .DV-annotationRegion, .DV-private.DV-annotationRegion {
     background: rgb(107, 194, 248);
     background: rgba(107, 194, 248, 0.2);
     border:3px solid rgb(107, 194, 248);
