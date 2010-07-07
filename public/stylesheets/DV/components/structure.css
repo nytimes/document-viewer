@@ -41,7 +41,7 @@ body, html{
   border-left:1px solid #ababab;
   left: auto; top: 0; bottom: 0; right: 0;
   overflow-y:auto;
-  background-position: 0 0;
+  background: white;
 }
 
 #DV-navControls{
