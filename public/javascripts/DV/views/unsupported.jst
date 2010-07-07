@@ -1,6 +1,11 @@
 <div id="DV-unsupported">
   <div class="DV-intro">
-    To use the Document Viewer you need to<br /> upgrade to a modern browser:
+    <% if (DV.Schema.document.resources && DV.Schema.document.resources.pdf) { %>
+      <a href="<%= DV.Schema.document.resources.pdf %>">Download this document as a PDF</a>
+    <% } %>
+    <br />
+    <br />
+    To use the Document Viewer you need to<br /> upgrade your browser:
   </div>
   <div class="DV-browsers">
     <div class="DV-browser">
