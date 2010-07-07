@@ -272,6 +272,12 @@ DV.Schema.helpers = {
       this.elements.viewer.css({position: 'absolute', top: offset.top, bottom: 0, left: offset.left, right: offset.left});
     },
 
+    unsupportedBrowser : function() {
+      if (!($j.browser.msie && $j.browser.version <= "6.0")) return false;
+      $j(DV.container).html(JST.unsupported({}));
+      return true;
+    },
+
     loadAssets: function(assets){
       for(var i = 0,len = assets.length; i<len; i++){
         this.loadAsset(assets[i]);

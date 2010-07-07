@@ -15,6 +15,9 @@ DV.Schema.states = {
 
   InitialLoad: {
     enter: function(sourceState){
+      // If we're in an unsupported browser ... bail.
+      if (this.helpers.unsupportedBrowser()) return;
+
       // Insert the Document Viewer HTML into the DOM.
       this.helpers.renderViewer();
       this.scrollBarWidth = ($j.browser.msie === true) ? 19 : 17;

@@ -26,6 +26,9 @@ javascripts:
     - public/javascripts/DV/controllers/documentViewer.js
     - public/javascripts/DV/controllers/*.js
 
+  templates:
+    - public/javascripts/DV/views/*.jst
+
 stylesheets:
   viewer:
     - public/stylesheets/DV/components/reset.css
@@ -36,6 +39,3 @@ stylesheets:
   plain:
     - public/stylesheets/DV/plain.css
 
-templates:
-  viewer:
-    - public/javascripts/DV/views/*.jst
